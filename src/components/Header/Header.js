@@ -16,9 +16,11 @@ export default function Navbar() {
   }
 
   return (
-    <div className='text-primary-color px-28 pt-5 font-IMBPlex text-base'>
+    <header className='text-primary-color px-28 pt-5 font-IMBPlex text-base'>
       <div className='flex items-center justify-between h-14'>
-        <h1>Logo</h1>
+        <div>
+          <h1>Logo</h1>
+        </div>
         <ul className='inline-flex gap-6'>
           <a href='#' className='relative'>
             <span className='group hover:transition-all before:text-secondery-color after:text-secondery-color font-IMBPlex text-base before:content-["["] before:absolute before:left-0 before:top-0 before:-translate-x-2.5 after:content-["]"] after:absolute after:right-0 after:top-0 after:translate-x-2.5 hover:before:-translate-x-3 hover:after:translate-x-3'>
@@ -88,6 +90,6 @@ export default function Navbar() {
         </div>
       </div>
       <hr className='border-[#454545]' />
-    </div>
+    </header>
   )
 }
