@@ -19,11 +19,11 @@ export default function Navbar() {
     <header className='text-primary-color px-28 pt-5 font-IMBPlex text-base'>
       <div className='flex items-center justify-between h-14'>
         <div>
-          <h1>Logo</h1>
+          <h1 className='text-lg'>Logo</h1>
         </div>
-        <ul className='inline-flex gap-6'>
+        <ul className='inline-flex absolute left-1/2 transform -translate-x-1/2 space-x-6'>
           <a href='#' className='relative'>
-            <span className='group hover:transition-all before:text-secondery-color after:text-secondery-color font-IMBPlex text-base before:content-["["] before:absolute before:left-0 before:top-0 before:-translate-x-2.5 after:content-["]"] after:absolute after:right-0 after:top-0 after:translate-x-2.5 hover:before:-translate-x-3 hover:after:translate-x-3'>
+            <span className='group hover:transition-all before:text-secondery-color after:text-secondery-color font-IMBPlex text-lg before:content-["["] before:absolute before:left-0 before:top-0 before:-translate-x-2.5 after:content-["]"] after:absolute after:right-0 after:top-0 after:translate-x-2.5 hover:before:-translate-x-3 hover:after:translate-x-3'>
               <span data-letter={'H'} className='transition-colors group-hover:animate-wiggle'>H</span>
               <span data-letter={'O'} className='transition-colors'>O</span>
               <span data-letter={'M'} className='transition-colors group-hover:animate-wiggle2'>M</span>
@@ -31,7 +31,7 @@ export default function Navbar() {
             </span>
           </a>
           <a href="#">
-          <span className='group font-IMBPlex text-base'>
+          <span className='group font-IMBPlex text-lg'>
               <span data-letter={'H'} className='transition-colors group-hover:animate-wiggle3'>S</span>
               <span data-letter={'O'} className='transition-colors'>T</span>
               <span data-letter={'M'} className='transition-colors group-hover:animate-wiggle2'>U</span>
@@ -41,7 +41,7 @@ export default function Navbar() {
             </span>
           </a>
           <a href="#">
-            <span className='group font-IMBPlex text-base'>
+            <span className='group font-IMBPlex text-lg'>
               <span data-letter={'G'} className='transition-colors group-hover:animate-wiggle'>G</span>
               <span data-letter={'A'} className='transition-colors group-hover:animate-wiggle'>A</span>
               <span data-letter={'M'} className='transition-colors'>M</span>
@@ -50,7 +50,7 @@ export default function Navbar() {
             </span>
           </a>
           <a href="#">
-            <span className='group font-IMBPlex text-base'>
+            <span className='group font-IMBPlex text-lg'>
               <span data-letter={'C'} className='transition-colors group-hover:animate-wiggle3'>C</span>
               <span data-letter={'O'} className='transition-colors group-hover:animate-wiggle'>O</span>
               <span data-letter={'N'} className='transition-colors'>N</span>
@@ -62,8 +62,8 @@ export default function Navbar() {
             </span>
           </a>
         </ul>
-        <div className='flex gap-5'>
-          <button className='flex items-center justify-center gap-2' onClick={() => playSoundHandler()}>
+        <div className='flex items-center space-x-4'>
+          <button className='flex items-center justify-center text-lg gap-2' onClick={() => playSoundHandler()}>
             <span>
               <span data-letter={'S'} className='transition-colors group-hover:animate-wiggle'>S</span>
               <span data-letter={'O'} className='transition-colors group-hover:animate-wiggle'>O</span>
@@ -85,7 +85,7 @@ export default function Navbar() {
               ))}
             </div>
           </button>
-          <h2><span className='text-secondery-color'>EN</span>/FN</h2>
+          <h2><span className='text-secondery-color text-lg'>EN</span>/FN</h2>
           <audio ref={audioRef} src={audio}></audio>
         </div>
       </div>

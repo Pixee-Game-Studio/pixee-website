@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     fontFamily: {
       "IMBPlex": ['IBM Plex Mono', 'monospace'],
-      "Bebas": ['Bebas neue', 'sans-serif'],
+      "Bebas": ["Bebas Neue", 'sans-serif'],
     },
     
     extend: {
@@ -17,7 +17,8 @@ module.exports = {
       },
       
       backgroundImage: {
-        'home-bg': "url('/src/assets/Images/bg.png')"
+        'home-bg': "url('/src/assets/Images/bg.png')",
+        'noise-bg': "url('/src/assets/Images/noise-img.png')"
       },
       
       colors: {
