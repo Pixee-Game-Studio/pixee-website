@@ -9,6 +9,10 @@
         padding: 0;
     }
 
+    body {
+        background-color: #000;
+    }
+
     @font-face {
         font-family: IBM Bold;
         font-display: swap;
@@ -26,10 +30,20 @@
         font-display: swap;
         src: url(./assets/Fonts/IBM_Plex_Mono/IBMPlexMono-SemiBold.ttf);
     }
-    
+        
     @font-face {
-        font-family: Bebas;
+        font-family: TestSohneMono;
+        font-display: swap;
+        src: url(./assets/Fonts/TestSohne/TestSohneMono-Buch-BF663d89cbcec64.otf);
+    }
+
+    @font-face {
+        font-family: BebasNeueRegular;
         font-display: swap;
         src: url(./assets/Fonts/Bebas_Neue/BebasNeue-Regular.ttf);
+    }
+
+    .bg-gradient {
+        background: linear-gradient(rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 1) 15%, rgba(0, 0, 0, 1) 100%);
     }
 }

@@ -4,7 +4,8 @@ module.exports = {
   theme: {
     fontFamily: {
       "IMBPlex": ['IBM Plex Mono', 'monospace'],
-      "Bebas": ["Bebas Neue", 'sans-serif'],
+      "BebasNeueRegular": ['BebasNeueRegular', 'sans-serif'],
+      "TestSohneMono": ['TestSohneMono', 'sans-serif'],
     },
     
     extend: {
@@ -20,10 +21,11 @@ module.exports = {
         'home-bg': "url('/src/assets/Images/bg.png')",
         'noise-bg': "url('/src/assets/Images/noise-img.png')"
       },
-      
+
       colors: {
         'primary-color': '#fff',
         'secondery-color': '#970218',
+        'text-color': '#828282'
       },
     },
 
