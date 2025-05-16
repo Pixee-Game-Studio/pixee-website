@@ -19,12 +19,14 @@ module.exports = {
       
       backgroundImage: {
         'home-bg': "url('/src/assets/Images/bg.png')",
-        'noise-bg': "url('/src/assets/Images/noise-img.png')"
+        'noise-bg': "url('/src/assets/Images/noise-img.png')",
+        'dust-bg': "url('/src/assets/Images/Dust.png')",
+        'blood-bg': "url('/src/assets/Images/BloodSpatter.png')"
       },
 
       colors: {
         'primary-color': '#fff',
-        'secondery-color': '#970218',
+        'secondery-color': '#FF2222',
         'text-color': '#828282'
       },
     },
