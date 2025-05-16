@@ -6,7 +6,7 @@ import XImg from '../assets/Images/x-img.png'
 
 export default function Studio() {
   return (
-    <div className='flex items-center flex-col p-[100px] py-48 absolute gap-14 inset-0 bg-noise-bg z-10 bg-repeat'>
+    <div className='flex items-center flex-col px-[200px] pt-10 gap-14'>
       <div className='flex items-center flex-row justify-center gap-8'>
         <div className='flex items-center justify-center gap-1.5'>
           <h1 className='font-IMBPlex text-text-color [writing-mode:sideways-lr] text-xl'>FIND US HERE:</h1>
