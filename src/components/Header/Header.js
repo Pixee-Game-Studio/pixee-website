@@ -24,52 +24,52 @@ export default function Navbar() {
         <ul className='inline-flex absolute left-1/2 transform -translate-x-1/2 space-x-6'>
           <a href='#' className='relative'>
             <span className='group hover:transition-all before:text-secondery-color after:text-secondery-color font-IMBPlex text-lg before:content-["["] before:absolute before:left-0 before:top-0 before:-translate-x-2.5 after:content-["]"] after:absolute after:right-0 after:top-0 after:translate-x-2.5 hover:before:-translate-x-3 hover:after:translate-x-3'>
-              <span data-letter={'H'} className='transition-colors group-hover:animate-wiggle'>H</span>
-              <span data-letter={'O'} className='transition-colors'>O</span>
-              <span data-letter={'M'} className='transition-colors group-hover:animate-wiggle2'>M</span>
-              <span data-letter={'E'} className='transition-colors'>E</span>
+              <span className='transition-colors group-hover:animate-wiggle'>H</span>
+              <span className='transition-colors'>O</span>
+              <span className='transition-colors group-hover:animate-wiggle2'>M</span>
+              <span className='transition-colors'>E</span>
             </span>
           </a>
           <a href="#">
           <span className='group font-IMBPlex text-lg'>
-              <span data-letter={'H'} className='transition-colors group-hover:animate-wiggle3'>S</span>
-              <span data-letter={'O'} className='transition-colors'>T</span>
-              <span data-letter={'M'} className='transition-colors group-hover:animate-wiggle2'>U</span>
-              <span data-letter={'E'} className='transition-colors'>D</span>
-              <span data-letter={'E'} className='transition-colors'>I</span>
-              <span data-letter={'E'} className='transition-colors group-hover:animate-wiggle'>O</span>
+              <span className='transition-colors group-hover:animate-wiggle3'>S</span>
+              <span className='transition-colors'>T</span>
+              <span className='transition-colors group-hover:animate-wiggle2'>U</span>
+              <span className='transition-colors'>D</span>
+              <span className='transition-colors'>I</span>
+              <span className='transition-colors group-hover:animate-wiggle'>O</span>
             </span>
           </a>
           <a href="#">
             <span className='group font-IMBPlex text-lg'>
-              <span data-letter={'G'} className='transition-colors group-hover:animate-wiggle'>G</span>
-              <span data-letter={'A'} className='transition-colors group-hover:animate-wiggle'>A</span>
-              <span data-letter={'M'} className='transition-colors'>M</span>
-              <span data-letter={'E'} className='transition-colors group-hover:animate-wiggle2'>E</span>
-              <span data-letter={'E'} className='transition-colors'>S</span>
+              <span className='transition-colors group-hover:animate-wiggle'>G</span>
+              <span className='transition-colors group-hover:animate-wiggle'>A</span>
+              <span className='transition-colors'>M</span>
+              <span className='transition-colors group-hover:animate-wiggle2'>E</span>
+              <span className='transition-colors'>S</span>
             </span>
           </a>
           <a href="#">
             <span className='group font-IMBPlex text-lg'>
-              <span data-letter={'C'} className='transition-colors group-hover:animate-wiggle3'>C</span>
-              <span data-letter={'O'} className='transition-colors group-hover:animate-wiggle'>O</span>
-              <span data-letter={'N'} className='transition-colors'>N</span>
-              <span data-letter={'T'} className='transition-colors group-hover:animate-wiggle2'>T</span>
-              <span data-letter={'A'} className='transition-colors group-hover:animate-wiggle2'>A</span>
-              <span data-letter={'A'} className='transition-colors group-hover:animate-wiggle1'>C</span>
-              <span data-letter={'C'} className='transition-colors'>T</span>
-              <span data-letter={'T'} className='transition-colors group-hover:animate-wiggle'>S</span>
+              <span className='transition-colors group-hover:animate-wiggle3'>C</span>
+              <span className='transition-colors group-hover:animate-wiggle'>O</span>
+              <span className='transition-colors'>N</span>
+              <span className='transition-colors group-hover:animate-wiggle2'>T</span>
+              <span className='transition-colors group-hover:animate-wiggle2'>A</span>
+              <span className='transition-colors group-hover:animate-wiggle1'>C</span>
+              <span className='transition-colors'>T</span>
+              <span className='transition-colors group-hover:animate-wiggle'>S</span>
             </span>
           </a>
         </ul>
         <div className='flex items-center space-x-4'>
           <button className='flex items-center justify-center text-lg gap-2' onClick={() => playSoundHandler()}>
             <span>
-              <span data-letter={'S'} className='transition-colors group-hover:animate-wiggle'>S</span>
-              <span data-letter={'O'} className='transition-colors group-hover:animate-wiggle'>O</span>
-              <span data-letter={'U'} className='transition-colors'>U</span>
-              <span data-letter={'N'} className='transition-colors group-hover:animate-wiggle2'>N</span>
-              <span data-letter={'D'} className='transition-colors'>D</span>
+              <span className='transition-colors group-hover:animate-wiggle'>S</span>
+              <span className='transition-colors group-hover:animate-wiggle'>O</span>
+              <span className='transition-colors'>U</span>
+              <span className='transition-colors group-hover:animate-wiggle2'>N</span>
+              <span className='transition-colors'>D</span>
             </span>
             <div className='flex items-center justify-center gap-1'>
               {[1, 2, 3, 4].map(i => (

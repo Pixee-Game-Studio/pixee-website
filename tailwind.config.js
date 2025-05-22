@@ -21,6 +21,7 @@ module.exports = {
         'home-bg': "url('/src/assets/Images/bg.png')",
         'noise-bg': "url('/src/assets/Images/noise-img.png')",
         'dust-bg': "url('/src/assets/Images/Dust.png')",
+        'story-page-bg': "url('/src/assets/Images/story-page-bg.png')",
         'blood-bg': "url('/src/assets/Images/BloodSpatter.png')"
       },
 
