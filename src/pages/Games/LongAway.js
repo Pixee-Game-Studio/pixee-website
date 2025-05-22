@@ -1,6 +1,10 @@
 import React from 'react'
 import GameImage from '../../assets/Images/gameImage.png'
 import BookImage from '../../assets/Images/book.png'
+import PianoImage from '../../assets/Images/piano.png'
+import Spotify from '../../assets/Images/spotify-img.svg'
+import SoundCloud from '../../assets/Images/soundcloud-img.svg'
+import Youtube from '../../assets/Images/youtube-img.svg'
 
 export default function LongAway() {
   return (
@@ -42,6 +46,24 @@ export default function LongAway() {
         </div>
         <div>
           <img src={BookImage} alt="Book Image" />
+        </div>
+      </div>
+      <div className='h-[100vh] flex items-center relative justify-between px-[200px]'>
+        <div>
+          <h1 className='font-BebasNeueRegular text-4xl text-white'>PIXEE ORGINAL SOUND TRACK</h1>
+          <p className='text-xl mt-4 text-text-color font-IMBPlex'>Music Composed And Produced By Kamyab</p>
+          <div className='flex gap-5 mt-5 items-center'>
+            <h1 className='text-xl font-IMBPlex text-secondery-color'>LongAway SoundTrack</h1>
+            <h1 className='text-xl font-IMBPlex text-text-color'>listen on</h1>
+            <div className='flex items-center justify-center gap-2'>
+              <img className="w-6" src={Spotify} alt="" />
+              <img className="w-8" src={Youtube} alt="" />
+              <img className="w-8" src={SoundCloud} alt="" />
+            </div>
+          </div>
+        </div>
+        <div className='-z-50'>
+          <img src={PianoImage} className='' alt="Piano image" />
         </div>
       </div>
     </>

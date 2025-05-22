@@ -1,8 +1,8 @@
 import React from 'react'
-import GithubImg from '../assets/Images/github-img.png'
-import YoutubeImg from '../assets/Images/youtube-img.png'
-import DiscordImg from '../assets/Images/discord-img.png'
-import XImg from '../assets/Images/x-img.png'
+import GithubImg from '../assets/Images/github-img.svg'
+import YoutubeImg from '../assets/Images/youtube-img.svg'
+import DiscordImg from '../assets/Images/discord-img.svg'
+import XImg from '../assets/Images/x-img.svg'
 
 export default function Studio() {
   return (
@@ -11,10 +11,10 @@ export default function Studio() {
         <div className='flex items-center justify-center gap-1.5'>
           <h1 className='font-IMBPlex text-text-color [writing-mode:sideways-lr] text-xl'>FIND US HERE:</h1>
           <div className='flex items-center gap-3 justify-center flex-col'>
-            <img src={GithubImg} className='w-7 h-7 cursor-pointer hover:text-secondery-color transition-colors' alt='github img' />
-            <img src={YoutubeImg} className='w-7 h-7 cursor-pointer hover:text-secondery-color transition-colors' alt='youtube img' />
-            <img src={DiscordImg} className='w-7 h-7 cursor-pointer hover:text-secondery-color transition-colors' alt='discord img' />
-            <img src={XImg} className='w-6 h-6 cursor-pointer hover:text-secondery-color transition-colors' alt='x img' />
+            <img src={GithubImg} className='w-9 cursor-pointer hover:text-secondery-color transition-colors' alt='github img' />
+            <img src={YoutubeImg} className='w-8 cursor-pointer hover:text-secondery-color transition-colors' alt='youtube img' />
+            <img src={DiscordImg} className='w-8 cursor-pointer hover:text-secondery-color transition-colors' alt='discord img' />
+            <img src={XImg} className='z w-8 cursor-pointer hover:text-secondery-color transition-colors' alt='x img' />
           </div>
         </div>
         <div>
