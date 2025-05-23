@@ -26,7 +26,7 @@ export default function Studio() {
         </div>
       </div>
       <hr className='w-full' />
-      <div className='flex ml-[100px] space-x-80 w-full'>
+      <div className='flex gap-[200px] w-full px-[200px]'>
         <h1 className='text-secondery-color text-3xl font-BebasNeueRegular'>INFO</h1>
         <div>
           <p className='text-text-color font-IMBPlex text-xl'>RELEASE DATE</p>

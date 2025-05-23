@@ -56,9 +56,9 @@ export default function LongAway() {
             <h1 className='text-xl font-IMBPlex text-secondery-color'>LongAway SoundTrack</h1>
             <h1 className='text-xl font-IMBPlex text-text-color'>listen on</h1>
             <div className='flex items-center justify-center gap-2'>
-              <img className="w-6" src={Spotify} alt="" />
-              <img className="w-8" src={Youtube} alt="" />
-              <img className="w-8" src={SoundCloud} alt="" />
+              <img className="w-6" src={Spotify} alt="spotify image" />
+              <img className="w-8" src={Youtube} alt="youtube image" />
+              <img className="w-8" src={SoundCloud} alt="soundcloud image" />
             </div>
           </div>
         </div>
