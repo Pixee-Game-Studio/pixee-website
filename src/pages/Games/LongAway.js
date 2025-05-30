@@ -5,8 +5,23 @@ import PianoImage from '../../assets/Images/piano.png'
 import Spotify from '../../assets/Images/spotify-img.svg'
 import SoundCloud from '../../assets/Images/soundcloud-img.svg'
 import Youtube from '../../assets/Images/youtube-img.svg'
+import { useRef } from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination, Autoplay } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 
 export default function LongAway() {
+  const slides = [
+    '../../assets/Images/gameImage.png',
+    '../../assets/Images/gameImage.png',
+    '../../assets/Images/gameImage.png',
+  ];
+
+  const prevRef = useRef(null);
+  const nextRef = useRef(null);
+
   return (
     <>
       <div className='flex justify-between px-[200px]'>
@@ -21,7 +36,44 @@ export default function LongAway() {
           <a href="#" className='transition-all mt-4 w-[250px] h-[50px] items-center font-TestSohneMono justify-center flex bg-transparent hover:bg-transparent border-[1px] text-lg text-white'>Purchase to order</a>
         </div>
         <div>
-          <img className='-mt-28' src={GameImage} alt="" />
+          <div className="relative w-[500px] -mt-[130px]">
+            <Swiper
+              modules={[Navigation, Pagination, Autoplay]}
+              spaceBetween={30}
+              slidesPerView={1}
+              loop={true}
+              pagination={{
+                el: '.custom-pagination',
+                clickable: true,  
+                renderBullet: (index, className) => {
+                  return `<span class="${className} custom-bullet"></span>`;
+                },
+                bulletClass: "custom-bullet",
+              }}
+              navigation={{
+                prevEl: prevRef.current,
+                nextEl: nextRef.current,
+              }}
+              onInit={(swiper) => {
+                swiper.params.navigation.prevEl = prevRef.current;
+                swiper.params.navigation.nextEl = nextRef.current;
+                swiper.navigation.init();
+                swiper.navigation.update();
+              }}
+              autoplay={{
+                delay: 3000,
+                disableOnInteraction: false,
+              }}
+            >
+              {slides.map((src, i) => (
+                <SwiperSlide key={i}>
+                  <img src={GameImage} alt={`Slide ${i + 1}`} className="w-full" />
+                </SwiperSlide>
+              ))}
+            </Swiper>
+            {/* Custom pagination */}
+            <div className="custom-pagination flex justify-center space-x-1.5"></div>
+          </div>
         </div>
       </div>
       <div className='h-[100vh] flex justify-between items-center px-[200px] bg-story-page-bg w-full mt-32'>
@@ -45,7 +97,7 @@ export default function LongAway() {
           </a>
         </div>
         <div>
-          <img src={BookImage} alt="Book Image" />
+          <img src={BookImage} />
         </div>
       </div>
       <div className='h-[100vh] flex items-center relative justify-between px-[200px]'>
@@ -56,9 +108,9 @@ export default function LongAway() {
             <h1 className='text-xl font-IMBPlex text-secondery-color'>LongAway SoundTrack</h1>
             <h1 className='text-xl font-IMBPlex text-text-color'>listen on</h1>
             <div className='flex items-center justify-center gap-2'>
-              <img className="w-6" src={Spotify} alt="spotify image" />
-              <img className="w-8" src={Youtube} alt="youtube image" />
-              <img className="w-8" src={SoundCloud} alt="soundcloud image" />
+              <img className="w-6 cursor-pointer" src={Spotify} alt="spotify image" />
+              <img className="w-8 cursor-pointer" src={Youtube} alt="youtube image" />
+              <img className="w-8 cursor-pointer" src={SoundCloud} alt="soundcloud image" />
             </div>
           </div>
         </div>

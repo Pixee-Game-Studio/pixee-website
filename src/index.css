@@ -89,6 +89,23 @@
         -webkit-animation-fill-mode: forwards;
         animation-fill-mode: forwards;
     }
+
+    .custom-bullet {
+        width: 30px;
+        height: 3px;
+        background-color: #fff;
+        border-radius: 1px;
+        transition: all 0.3s;
+        cursor: pointer;
+    }
+
+    .custom-bullet.swiper-pagination-bullet-active {
+        width: 110px;
+        height: 3px;
+        cursor: pointer;
+        background: #FF2222;
+        border-radius: 1px;
+    }
     
     @keyframes type {
         0% {
