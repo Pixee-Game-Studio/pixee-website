@@ -22,44 +22,17 @@ export default function Navbar() {
           <h1 className='text-lg'>Logo</h1>
         </div>
         <ul className='inline-flex absolute left-1/2 transform -translate-x-1/2 space-x-6'>
-          <a href='#' className='relative'>
-            <span className='group hover:transition-all before:text-secondery-color after:text-secondery-color font-IMBPlex text-lg before:content-["["] before:absolute before:left-0 before:top-0 before:-translate-x-2.5 after:content-["]"] after:absolute after:right-0 after:top-0 after:translate-x-2.5 hover:before:-translate-x-3 hover:after:translate-x-3'>
-              <span className='transition-colors group-hover:animate-wiggle'>H</span>
-              <span className='transition-colors'>O</span>
-              <span className='transition-colors group-hover:animate-wiggle2'>M</span>
-              <span className='transition-colors'>E</span>
-            </span>
+          <a href="#" class="relative text-lg font-IMBPlex inline-block before:content-[''] before:absolute before:left-0 before:top-1/2 before:h-[2px] before:w-0 before:bg-secondery-color before:translate-y-[-50%] before:transition-all before:duration-300 hover:before:w-full">
+            HOME
           </a>
-          <a href="#">
-          <span className='group font-IMBPlex text-lg'>
-              <span className='transition-colors group-hover:animate-wiggle3'>S</span>
-              <span className='transition-colors'>T</span>
-              <span className='transition-colors group-hover:animate-wiggle2'>U</span>
-              <span className='transition-colors'>D</span>
-              <span className='transition-colors'>I</span>
-              <span className='transition-colors group-hover:animate-wiggle'>O</span>
-            </span>
+          <a href="#" class="relative text-lg font-IMBPlex inline-block before:content-[''] before:absolute before:left-0 before:top-1/2 before:h-[2px] before:w-0 before:bg-secondery-color before:translate-y-[-50%] before:transition-all before:duration-300 hover:before:w-full">
+            STUDIO
           </a>
-          <a href="#">
-            <span className='group font-IMBPlex text-lg'>
-              <span className='transition-colors group-hover:animate-wiggle'>G</span>
-              <span className='transition-colors group-hover:animate-wiggle'>A</span>
-              <span className='transition-colors'>M</span>
-              <span className='transition-colors group-hover:animate-wiggle2'>E</span>
-              <span className='transition-colors'>S</span>
-            </span>
+          <a href="#" class="relative text-lg font-IMBPlex inline-block before:content-[''] before:absolute before:left-0 before:top-1/2 before:h-[2px] before:w-0 before:bg-secondery-color before:translate-y-[-50%] before:transition-all before:duration-300 hover:before:w-full">
+            GAMES
           </a>
-          <a href="#">
-            <span className='group font-IMBPlex text-lg'>
-              <span className='transition-colors group-hover:animate-wiggle3'>C</span>
-              <span className='transition-colors group-hover:animate-wiggle'>O</span>
-              <span className='transition-colors'>N</span>
-              <span className='transition-colors group-hover:animate-wiggle2'>T</span>
-              <span className='transition-colors group-hover:animate-wiggle2'>A</span>
-              <span className='transition-colors group-hover:animate-wiggle1'>C</span>
-              <span className='transition-colors'>T</span>
-              <span className='transition-colors group-hover:animate-wiggle'>S</span>
-            </span>
+          <a href="#" class="relative text-lg font-IMBPlex inline-block before:content-[''] before:absolute before:left-0 before:top-1/2 before:h-[2px] before:w-0 before:bg-secondery-color before:translate-y-[-50%] before:transition-all before:duration-300 hover:before:w-full">
+            CONTACT
           </a>
         </ul>
         <div className='flex items-center space-x-4'>

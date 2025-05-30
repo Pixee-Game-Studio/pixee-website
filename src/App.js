@@ -12,10 +12,8 @@ import TheLastOfUs from "./pages/Games/TheLastOfUs";
 import RedDead from "./pages/Games/RedDead";
 
 function App() {
-
-
   return (
-    <div className="h-screen bg-home-bg bg-cover bg-center">
+    <div className="h-screen bg-cover bg-center">
       <div className="inset-0 bg-noise-bg bg-repeat">
         <Header />
         <div>

@@ -6,17 +6,8 @@ import XImg from '../assets/Images/x-img.svg'
 
 export default function Studio() {
   return (
-    <div className='flex items-center flex-col px-[200px] pt-10 gap-14'>
-      <div className='flex items-center flex-row justify-center gap-8'>
-        <div className='flex items-center justify-center gap-1.5'>
-          <h1 className='font-IMBPlex text-text-color [writing-mode:sideways-lr] text-xl'>FIND US HERE:</h1>
-          <div className='flex items-center gap-3 justify-center flex-col'>
-            <img src={GithubImg} className='w-9 cursor-pointer hover:text-secondery-color transition-colors' alt='github img' />
-            <img src={YoutubeImg} className='w-8 cursor-pointer hover:text-secondery-color transition-colors' alt='youtube img' />
-            <img src={DiscordImg} className='w-8 cursor-pointer hover:text-secondery-color transition-colors' alt='discord img' />
-            <img src={XImg} className='z w-8 cursor-pointer hover:text-secondery-color transition-colors' alt='x img' />
-          </div>
-        </div>
+    <div className='flex items-center justify-center flex-col px-[200px] pt-10 gap-14'>
+      <div className='flex items-center text-center justify-center gap-8'>
         <div>
           <div>
             <p className='font-BebasNeueRegular text-secondery-color text-xl'>THE STUDIO</p>
@@ -26,7 +17,7 @@ export default function Studio() {
         </div>
       </div>
       <hr className='w-full' />
-      <div className='flex gap-[200px] w-full px-[200px]'>
+      <div className='flex w-full justify-between px-[200px]'>
         <h1 className='text-secondery-color text-3xl font-BebasNeueRegular'>INFO</h1>
         <div>
           <p className='text-text-color font-IMBPlex text-xl'>RELEASE DATE</p>
@@ -35,6 +26,15 @@ export default function Studio() {
         <div>
           <p className='text-text-color font-IMBPlex text-xl'>GENER</p>
           <h1 className='text-white font-IMBPlex text-xl'>Survival-Horror</h1>
+        </div>
+        <div className='flex flex-col gap-1.5'>
+          <h1 className='text-text-color font-IMBPlex text-xl'>SOCIAL MEDIA</h1>
+          <div className='flex items-center gap-3 justify-center'>
+            <img src={GithubImg} className='w-9 cursor-pointer hover:text-secondery-color transition-colors' alt='github img' />
+            <img src={YoutubeImg} className='w-8 cursor-pointer hover:text-secondery-color transition-colors' alt='youtube img' />
+            <img src={DiscordImg} className='w-8 cursor-pointer hover:text-secondery-color transition-colors' alt='discord img' />
+            <img src={XImg} className='z w-8 cursor-pointer hover:text-secondery-color transition-colors' alt='x img' />
+          </div>
         </div>
       </div>
     </div>
