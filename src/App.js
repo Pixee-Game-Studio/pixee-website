@@ -5,6 +5,7 @@ import Footer from './components/Footer/Footer'
 import Home from "./pages/Home";
 import Studio from './pages/Studio'
 import Games from './pages/Games'
+import Contact from './pages/Contact'
 import BarbWarn from './assets/Images/barb-warn.png'
 import { Routes, Route } from "react-router-dom";
 import LongAway from "./pages/Games/LongAway";
@@ -21,11 +22,13 @@ function App() {
           <Studio />
           <img src={BarbWarn} className="w-full py-10" />
           <Games />
-            <Routes>
+          <Routes>
             <Route path="/" element={<LongAway />} />
             <Route path="/thelastofus" element={<TheLastOfUs />} />
             <Route path="/reddead" element={<RedDead />} />
           </Routes>
+          <img src={BarbWarn} className="w-full pb-10" />
+          <Contact />
         </div>
         <Footer />
       </div>

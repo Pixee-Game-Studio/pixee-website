@@ -100,7 +100,7 @@ export default function LongAway() {
           <img src={BookImage} />
         </div>
       </div>
-      <div className='h-[100vh] flex items-center relative justify-between px-[200px]'>
+      <div className='flex items-center relative justify-between px-[200px]'>
         <div>
           <h1 className='font-BebasNeueRegular text-4xl text-white'>PIXEE ORGINAL SOUND TRACK</h1>
           <p className='text-xl mt-4 text-text-color font-IMBPlex'>Music Composed And Produced By Kamyab</p>
