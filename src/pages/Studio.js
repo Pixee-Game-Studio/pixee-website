@@ -6,18 +6,18 @@ import XImg from '../assets/Images/x-img.svg'
 
 export default function Studio() {
   return (
-    <div className='flex items-center justify-center flex-col px-[200px] pt-10 gap-14'>
+    <div className='flex items-center justify-centerflex flex-col gap-10 justify-center w-full mx-auto px-[50px] lg:px-[100px] xl:px-[200px]'>
       <div className='flex items-center text-center justify-center gap-8'>
         <div>
           <div>
             <p className='font-BebasNeueRegular text-secondery-color text-xl'>THE STUDIO</p>
             <h2 className='font-BebasNeueRegular text-white text-4xl'>ABOUT PIXEE STUDIO</h2>
           </div>
-          <p className='text-white text-xl mt-4 font-TestSohneMono'>At <span className='text-secondery-color'>Pixee Game</span> Studio, we’re a small team of dreamers who love making fun and creative games. <br/> We believe games should spark imagination and bring joy to players of all ages. <br/> Whether it’s a tiny mobile game or a big adventure, we put our heart into every pixel.</p>
+          <p className='text-white text-base sm:text-lg max-w-[1200px] lg:text-xl leading-relaxed mt-4 font-TestSohneMono'>At <span className='text-secondery-color'>Pixee Game</span> Studio, we’re a small team of dreamers who love making fun and creative games. We believe games should spark imagination and bring joy to players of all ages. Whether it’s a tiny mobile game or a big adventure, we put our heart into every pixel.</p>
         </div>
       </div>
       <hr className='w-full' />
-      <div className='flex w-full justify-between px-[200px]'>
+      <div className='flex w-full justify-between mx-auto px-[50px] lg:px-[100px]'>
         <h1 className='text-secondery-color text-3xl font-BebasNeueRegular'>INFO</h1>
         <div>
           <p className='text-text-color font-IMBPlex text-xl'>RELEASE DATE</p>
