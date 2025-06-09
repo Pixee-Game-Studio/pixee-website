@@ -12,7 +12,7 @@ export default function Contact() {
 
   return (
     <>
-      <div className='flex flex-col lg:flex-row gap-10 justify-center w-full mx-auto px-[50px] lg:px-[100px] xl:px-[200px]'>
+      <div className='container flex flex-col lg:flex-row lg:gap-10 justify-center w-full mx-auto'>
         <div className='flex flex-col'>
           <div>
             <div>
@@ -67,7 +67,7 @@ export default function Contact() {
           onSwiper={(swiper) => (swiperRef.current = swiper)}
           spaceBetween={30}
           slidesPerView={1}
-          className="lg:max-w-[650px]"
+          className="max-w-[400px] xl:max-w-[650px]"
           loop={true}
           allowTouchMove= {false}
           navigation={{

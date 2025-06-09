@@ -2,12 +2,23 @@
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
-    fontFamily: {
-      "IMBPlex": ['IBM Plex Mono', 'monospace'],
-      "BebasNeueRegular": ['BebasNeueRegular', 'sans-serif'],
-      "TestSohneMono": ['TestSohneMono', 'sans-serif'],
-    },
-    
+      fontFamily: {
+        "IMBPlex": ['IBM Plex Mono', 'monospace'],
+        "BebasNeueRegular": ['BebasNeueRegular', 'sans-serif'],
+        "TestSohneMono": ['TestSohneMono', 'sans-serif'],
+      },
+
+    //   container: {
+    //     center: true,
+    //     padding: '20px',
+    //     screens: {
+    //       sm: '730px',
+    //       lg: '984px',
+    //       xl: '1240px',
+    //       '2xl': '1496px'
+    //     },
+    // },
+
     extend: {
       animation: {
         wiggle: 'wiggle 0.2s linear',

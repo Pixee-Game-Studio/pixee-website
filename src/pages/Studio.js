@@ -6,7 +6,7 @@ import XImg from '../assets/Images/x-img.svg'
 
 export default function Studio() {
   return (
-    <div className='flex items-center justify-centerflex flex-col gap-10 justify-center w-full mx-auto px-[50px] lg:px-[100px] xl:px-[200px]'>
+    <div className='container flex items-center justify-centerflex flex-col gap-10 justify-center w-full mx-auto xl:px-[50px]'>
       <div className='flex items-center text-center justify-center gap-8'>
         <div>
           <div>
@@ -17,23 +17,23 @@ export default function Studio() {
         </div>
       </div>
       <hr className='w-full' />
-      <div className='flex w-full justify-between mx-auto px-[50px] lg:px-[100px]'>
-        <h1 className='text-secondery-color text-3xl font-BebasNeueRegular'>INFO</h1>
+      <div className='flex w-full justify-between mx-auto px-0 sm:px[30px] lg:px-[80px]'>
+        <h1 className='text-secondery-color text-2xl lg:text-3xl font-BebasNeueRegular'>INFO</h1>
         <div>
-          <p className='text-text-color font-IMBPlex text-xl'>RELEASE DATE</p>
-          <h1 className='text-white font-IMBPlex text-xl'>September,4th2013</h1>
+          <p className='text-text-color font-IMBPlex text-sm lg:text-xl'>RELEASE DATE</p>
+          <h1 className='text-white font-IMBPlex text-sm lg:text-xl'>September,4th2013</h1>
         </div>
         <div>
-          <p className='text-text-color font-IMBPlex text-xl'>GENER</p>
-          <h1 className='text-white font-IMBPlex text-xl'>Survival-Horror</h1>
+          <p className='text-text-color font-IMBPlex text-sm lg:text-xl'>GENER</p>
+          <h1 className='text-white font-IMBPlex text-sm lg:text-xl'>Survival-Horror</h1>
         </div>
         <div className='flex flex-col gap-1.5'>
-          <h1 className='text-text-color font-IMBPlex text-xl'>SOCIAL MEDIA</h1>
+          <h1 className='text-text-color font-IMBPlex text-sm lg:text-xl'>SOCIAL MEDIA</h1>
           <div className='flex items-center gap-3 justify-center'>
-            <img src={GithubImg} className='w-9 cursor-pointer hover:text-secondery-color transition-colors' alt='github img' />
-            <img src={YoutubeImg} className='w-8 cursor-pointer hover:text-secondery-color transition-colors' alt='youtube img' />
-            <img src={DiscordImg} className='w-8 cursor-pointer hover:text-secondery-color transition-colors' alt='discord img' />
-            <img src={XImg} className='z w-8 cursor-pointer hover:text-secondery-color transition-colors' alt='x img' />
+            <img src={GithubImg} className='lg:w-9 w-7 cursor-pointer hover:text-secondery-color transition-colors' alt='github img' />
+            <img src={YoutubeImg} className='lg:w-8 w-6 cursor-pointer hover:text-secondery-color transition-colors' alt='youtube img' />
+            <img src={DiscordImg} className='lg:w-8 w-6 cursor-pointer hover:text-secondery-color transition-colors' alt='discord img' />
+            <img src={XImg} className='z lg:w-8 w-6 cursor-pointer hover:text-secondery-color transition-colors' alt='x img' />
           </div>
         </div>
       </div>

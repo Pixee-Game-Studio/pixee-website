@@ -16,12 +16,12 @@ export default function Navbar() {
   }
 
   return (
-    <header className='text-primary-color px-28 pt-5 font-IMBPlex text-base'>
+    <header className='container text-primary-color pt-5 font-IMBPlex text-base'>
       <div className='flex items-center justify-between h-14'>
         <div>
           <h1 className='text-lg'>Logo</h1>
         </div>
-        <ul className='inline-flex absolute left-1/2 transform -translate-x-1/2 space-x-6'>
+        <ul className='hidden lg:inline-flex absolute left-1/2 transform -translate-x-1/2 space-x-6'>
           <a href="#" class="relative text-lg font-IMBPlex inline-block before:content-[''] before:absolute before:left-0 before:top-1/2 before:h-[2px] before:w-0 before:bg-secondery-color before:translate-y-[-50%] before:transition-all before:duration-300 hover:before:w-full">
             HOME
           </a>

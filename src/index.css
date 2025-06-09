@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .container {
+    @apply w-full max-w-screen-2xl mx-auto px-10 sm:px-16;
+  }
+}
+
 @layer base {
     *, ::before, ::after {
         box-sizing: border-box;
@@ -93,6 +99,7 @@
     .custom-bullet {
         width: 30px;
         height: 3px;
+        margin-top: 30px;
         background-color: #fff;
         border-radius: 1px;
         transition: all 0.3s;

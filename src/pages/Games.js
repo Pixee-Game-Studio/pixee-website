@@ -15,7 +15,7 @@ export default function Games() {
   const nextRef = useRef(null);
 
   return (
-    <div className='flex flex-col xl:flex-row gap-24 justify-center w-full mx-auto px-[20px] sm:px-[50px] lg:px-[100px] mt-20'>
+    <div className='container flex flex-col items-center xl:flex-row gap-24 justify-center w-full mx-auto lg:mt-20'>
       <div>
         <div>
           <p className='font-BebasNeueRegular text-secondery-color text-xl'>GAMES</p>
@@ -27,12 +27,12 @@ export default function Games() {
           <Link to='/reddead' className='transition-all bg-dust-bg w-[100px] h-[35px] pt-1 items-center justify-center flex bg-white font-BebasNeueRegular hover:bg-blood-bg hover:bg-transparent hover:text-white hover:border-[1px] hover:transition-all text-lg text-[#000]'>REDDEAD</Link>
         </div>
         <div className='css-typing mt-6'>
-          <p className='font-TestSohneMono text-xl text-white'>Long Away is an open-world action-adventure game by</p>
-          <p className='font-TestSohneMono text-xl text-white'>Pixee Studio, set in the fading days of the American Wild West.</p> 
-          <p className='font-TestSohneMono text-xl text-white'>You play as Arthur Morgan (in RDR2) or John Marston (in RDR1), </p> 
-          <p className='font-TestSohneMono text-xl text-white'>navigating a world of loyalty, survival, and tough moral choices.</p>
+          <p className='text-white text-base sm:text-lg lg:text-xl leading-relaxed font-TestSohneMono'>Long Away is an open-world action-adventure game by</p>
+          <p className='text-white text-base sm:text-lg lg:text-xl leading-relaxed font-TestSohneMono'>Pixee Studio, set in the fading days of the American Wild West.</p> 
+          <p className='text-white text-base sm:text-lg lg:text-xl leading-relaxed font-TestSohneMono'>You play as Arthur Morgan (in RDR2) or John Marston (in RDR1), </p> 
+          <p className='text-white text-base sm:text-lg lg:text-xl leading-relaxed font-TestSohneMono'>navigating a world of loyalty, survival, and tough moral choices.</p>
         </div>
-        <p className='mt-3 font-TestSohneMono text-xl text-white inline-block'><span className='text-secondery-color'>Download</span> now and dive into a world you won’t <br/> want to leave!</p>
+        <p className='mt-3 text-white text-base sm:text-lg lg:text-xl leading-relaxed font-TestSohneMono inline-block'><span className='text-secondery-color'>Download</span> now and dive into a world you won’t <br/> want to leave!</p>
         <a href="#" className='transition-all mt-4 w-[250px] h-[50px] items-center font-TestSohneMono justify-center flex bg-transparent hover:bg-transparent border-[1px] text-lg text-white'>Purchase to order</a>
       </div>
       <div>
