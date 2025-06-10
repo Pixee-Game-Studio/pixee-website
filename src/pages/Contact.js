@@ -67,7 +67,7 @@ export default function Contact() {
           onSwiper={(swiper) => (swiperRef.current = swiper)}
           spaceBetween={30}
           slidesPerView={1}
-          className="max-w-[400px] xl:max-w-[650px]"
+          className="xl:max-w-[650px]"
           loop={true}
           allowTouchMove= {false}
           navigation={{

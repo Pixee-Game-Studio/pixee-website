@@ -1,21 +1,59 @@
 import React from 'react'
-import GameImage from '../../assets/Images/gameImage.png'
+import BookImage from '../../assets/Images/book.png'
+import PianoImage from '../../assets/Images/piano.png'
+import Spotify from '../../assets/Images/spotify-img.svg'
+import SoundCloud from '../../assets/Images/soundcloud-img.svg'
+import Youtube from '../../assets/Images/youtube-img.svg'
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 
 export default function LongAway() {
   return (
-    <div className='flex justify-between px-[200px]'>
-      <div>
-        <div className='css-typing mt-6'>
-          <p className='font-TestSohneMono text-xl text-white'>The Last Of Us is an open-world action-adventure game by</p>
-          <p className='font-TestSohneMono text-xl text-white'>Pixee Studio, set in the fading days of the American Wild West.</p> 
-          <p className='font-TestSohneMono text-xl text-white'>You play as Arthur Morgan (in RDR2) or John Marston (in RDR1), </p> 
-          <p className='font-TestSohneMono text-xl text-white'>navigating a world of loyalty, survival, and tough moral choices.</p>
+    <div>
+      <div className='bg-story-page-bg'>
+        <div className='container h-[100vh] flex justify-between items-center gap-10 mx-auto w-full mt-32 py-14'>
+          <div className=''>
+            <div>
+              <p className='font-BebasNeueRegular text-secondery-color text-xl'>STOTY BOOK</p>
+              <h2 className='font-BebasNeueRegular text-white text-4xl'>THE PIXEE STORY</h2>
+            </div>
+            <p className='text-white max-w-[800px] text-base sm:text-lg lg:text-xl leading-relaxed mt-4 mb-5 font-TestSohneMono'>At The trans-national MURKOFF CORPORATION tirelessly pushes the frontier of scientific research and development. Partnering with the greatest minds of tomorrow, Murkoff expands the reach of every branch of scientific inquiry, including gene therapy, behavioral psychology, information technology, and medicine. In the event of mistake or oversight, the MURKOFF INSURANCE MITIGATION DEPARTMENT comes in to minimize economic fallout. Mitigation Officers are damage control. They are not here to save lives or help people, they are here to make sure it doesn’t cost the company any more than it has to...</p>
+            <a href='#' className='relative text-white ml-2'>
+              <span className='group hover:transition-all before:text-secondery-color after:text-secondery-color font-IMBPlex text-2xl before:content-["["] before:absolute before:-left-1 before:-top-1.5 before:-translate-x-2.5 after:content-["]"] after:absolute after:-right-1 after:-top-1.5 after:translate-x-2.5 hover:before:-translate-x-3 hover:after:translate-x-3'>
+                <span className='transition-colors text-xl group-hover:animate-wiggle'>R</span>
+                <span className='transition-colors text-xl'>E</span>
+                <span className='transition-colors text-xl group-hover:animate-wiggle2'>A</span>
+                <span className='transition-colors text-xl'>D</span>
+                <span className='transition-colors text-xl group-hover:animate-wiggle3'>  M</span>
+                <span className='transition-colors text-xl'>O</span>
+                <span className='transition-colors text-xl'>R</span>
+                <span className='transition-colors text-xl group-hover:animate-wiggle2'>E</span>
+              </span>
+            </a>
+          </div>
+          <div>
+            <img src={BookImage} className='hidden lg:block lg:w-[400px]' />
+          </div>
         </div>
-        <p className='mt-3 font-TestSohneMono text-xl text-white inline-block'><span className='text-secondery-color'>Download</span> now and dive into a world you won’t <br/> want to leave!</p>
-        <a href="#" className='transition-all mt-4 w-[250px] h-[50px] items-center font-TestSohneMono justify-center flex bg-transparent hover:bg-transparent border-[1px] text-lg text-white'>Purchase to order</a>
       </div>
-      <div>
-        <img className='-mt-28' src={GameImage} alt="" />
+      <div className='container text-center xl:text-left flex items-center flex-col relative justify-between xl:flex-row gap-24 w-full mx-auto mt-20'>
+        <div>
+          <h1 className='font-BebasNeueRegular text-white text-5xl leading-relaxed'>PIXEE ORGINAL SOUND TRACK</h1>
+          <p className='text-xl mt-4 text-text-color font-IMBPlex'>Music Composed And Produced By Kamyab</p>
+          <div className='flex gap-5 mt-5 items-center'>
+            <h1 className='text-xl font-IMBPlex text-secondery-color'>LongAway SoundTrack</h1>
+            <h1 className='text-xl font-BebasNeueRegular text-text-color'>LISTEN ON</h1>
+            <div className='flex items-center justify-center gap-2'>
+              <img className="w-6 cursor-pointer" src={Spotify} alt="spotify image" />
+              <img className="w-8 cursor-pointer" src={Youtube} alt="youtube image" />
+              <img className="w-8 cursor-pointer" src={SoundCloud} alt="soundcloud image" />
+            </div>
+          </div>
+        </div>
+        <div className='-z-50'>
+          <img src={PianoImage} className='' alt="Piano image" />
+        </div>
       </div>
     </div>
   )
