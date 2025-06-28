@@ -8,16 +8,16 @@ module.exports = {
         "TestSohneMono": ['TestSohneMono', 'sans-serif'],
       },
 
-    //   container: {
-    //     center: true,
-    //     padding: '20px',
-    //     screens: {
-    //       sm: '730px',
-    //       lg: '984px',
-    //       xl: '1240px',
-    //       '2xl': '1496px'
-    //     },
-    // },
+      container: {
+        center: true,
+        padding: '20px',
+        screens: {
+          sm: '730px',
+          lg: '984px',
+          xl: '1240px',
+          '2xl': '1496px'
+        },
+      },
 
     extend: {
       animation: {

@@ -18,25 +18,25 @@ export default function Games() {
     <div className='container flex flex-col items-center xl:flex-row gap-24 justify-center w-full mx-auto lg:mt-20'>
       <div>
         <div>
-          <p className='font-BebasNeueRegular text-secondery-color text-xl'>GAMES</p>
-          <h2 className='font-BebasNeueRegular text-white text-4xl'>THE PIXEE'S GAMES</h2>
+          <p className='font-BebasNeueRegular text-secondery-color text-xs sm:text-xl'>GAMES</p>
+          <h2 className='font-BebasNeueRegular text-white text-xl sm:text-4xl'>THE PIXEE'S GAMES</h2>
         </div>
         <div className='flex gap-2 mt-2'>
-          <Link to='/' className='transition-all bg-dust-bg w-[100px] h-[35px] pt-1 items-center justify-center flex bg-white font-BebasNeueRegular hover:bg-blood-bg hover:bg-transparent hover:text-white hover:border-[1px] hover:transition-all text-lg text-[#000]'>LONG AWAY</Link>
-          <Link to='/thelastofus' className='transition-all bg-dust-bg w-[100px] h-[35px] pt-1 items-center justify-center flex bg-white font-BebasNeueRegular hover:bg-blood-bg hover:bg-transparent hover:text-white hover:border-[1px] hover:transition-all text-lg text-[#000]'>THE LAST OF US</Link>
-          <Link to='/reddead' className='transition-all bg-dust-bg w-[100px] h-[35px] pt-1 items-center justify-center flex bg-white font-BebasNeueRegular hover:bg-blood-bg hover:bg-transparent hover:text-white hover:border-[1px] hover:transition-all text-lg text-[#000]'>REDDEAD</Link>
+          <Link to='/' className='transition-all bg-dust-bg w-[70px] sm:w-[100px] h-[25px] sm:h-[35px] pt-1 items-center justify-center flex bg-white font-BebasNeueRegular hover:bg-blood-bg hover:bg-transparent hover:text-white hover:border-[1px] hover:transition-all text-xs sm:text-lg text-[#000]'>LONG AWAY</Link>
+          <Link to='/thelastofus' className='transition-all bg-dust-bg w-[70px] sm:w-[100px] h-[25px] sm:h-[35px] pt-1 items-center justify-center flex bg-white font-BebasNeueRegular hover:bg-blood-bg hover:bg-transparent hover:text-white hover:border-[1px] hover:transition-all text-xs sm:text-lg text-[#000]'>THE LAST OF US</Link>
+          <Link to='/reddead' className='transition-all bg-dust-bg w-[70px] wsm:-[100px] h h-[25px]-sm:[35px] pt-1 items-center justify-center flex bg-white font-BebasNeueRegular hover:bg-blood-bg hover:bg-transparent hover:text-white hover:border-[1px] hover:transition-all text-xs sm:text-lg text-[#000]'>REDDEAD</Link>
         </div>
         <div className='css-typing mt-6'>
-          <p className='text-white text-base sm:text-lg lg:text-xl leading-relaxed font-TestSohneMono'>Long Away is an open-world action-adventure game by</p>
-          <p className='text-white text-base sm:text-lg lg:text-xl leading-relaxed font-TestSohneMono'>Pixee Studio, set in the fading days of the American Wild West.</p> 
-          <p className='text-white text-base sm:text-lg lg:text-xl leading-relaxed font-TestSohneMono'>You play as Arthur Morgan (in RDR2) or John Marston (in RDR1), </p> 
-          <p className='text-white text-base sm:text-lg lg:text-xl leading-relaxed font-TestSohneMono'>navigating a world of loyalty, survival, and tough moral choices.</p>
+          <p className='text-white text-xs sm:text-lg lg:text-xl leading-relaxed font-TestSohneMono'>Long Away is an open-world action-adventure game by</p>
+          <p className='text-white text-xs sm:text-lg lg:text-xl leading-relaxed font-TestSohneMono'>Pixee Studio, set in the fading days of the American Wild West.</p> 
+          <p className='text-white text-xs sm:text-lg lg:text-xl leading-relaxed font-TestSohneMono'>You play as Arthur Morgan (in RDR2) or John Marston (in RDR1), </p> 
+          <p className='text-white text-xs sm:text-lg lg:text-xl leading-relaxed font-TestSohneMono'>navigating a world of loyalty, survival, and tough moral choices.</p>
         </div>
-        <p className='mt-3 text-white text-base sm:text-lg lg:text-xl leading-relaxed font-TestSohneMono inline-block'><span className='text-secondery-color'>Download</span> now and dive into a world you won’t <br/> want to leave!</p>
-        <a href="#" className='transition-all mt-4 w-[250px] h-[50px] items-center font-TestSohneMono justify-center flex bg-transparent hover:bg-transparent border-[1px] text-lg text-white'>Purchase to order</a>
+        <p className='mt-3 text-white text-xs sm:text-lg lg:text-xl leading-relaxed font-TestSohneMono inline-block'><span className='text-secondery-color'>Download</span> now and dive into a world you won’t <br/> want to leave!</p>
+        <a href="#" className='transition-all mt-4 w-[150px] sm:w-[250px] h-[40px] sm:h-[50px] items-center font-TestSohneMono justify-center flex bg-transparent hover:bg-transparent border-[1px] text-xs sm:text-lg lg:text-xl text-white'>Purchase to order</a>
       </div>
       <div>
-        <div className="relative w-[500px] -mt-16">
+        <div className="relative w-[300px] sm:w-[500px] -mt-16">
           <Swiper
             modules={[Navigation, Pagination, Autoplay]}
             spaceBetween={30}
