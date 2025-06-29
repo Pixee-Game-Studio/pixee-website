@@ -35,15 +35,9 @@ export default function Navbar() {
             CONTACT
           </a>
         </ul>
-        <div className='flex items-center space-x-4'>
+        <div className='flex items-center space-x-5'>
           <button className='flex items-center justify-center text-lg gap-2' onClick={() => playSoundHandler()}>
-            <span>
-              <span className='transition-colors group-hover:animate-wiggle'>S</span>
-              <span className='transition-colors group-hover:animate-wiggle'>O</span>
-              <span className='transition-colors'>U</span>
-              <span className='transition-colors group-hover:animate-wiggle2'>N</span>
-              <span className='transition-colors'>D</span>
-            </span>
+            <span className='text-base'>SOUND</span>
             <div className='flex items-center justify-center gap-1'>
               {[1, 2, 3, 4].map(i => (
                 <div
@@ -58,7 +52,15 @@ export default function Navbar() {
               ))}
             </div>
           </button>
-          <h2><span className='text-secondery-color text-lg'>EN</span>/FN</h2>
+          <div className='flex gap-4 items-center justify-center'>
+            <a href='#' className='relative text-white ml-2'>
+              <span className='group hover:transition-all before:text-white after:text-white font-IMBPlex text-base before:content-["["] before:absolute before:-left-1 before:-translate-x-2 after:content-["]"] after:absolute after:-right-1 after:translate-x-2 hover:before:-translate-x-2.5 hover:after:translate-x-2.5'>
+                <span className='transition-colors text-secondery-color group-hover:animate-wiggle'>E</span>
+                <span className='transition-colors text-secondery-color  group-hover:animate-wiggle3'>N</span>
+              </span>
+            </a>
+            <h1 className='text-base'>FN</h1>
+          </div>
           <audio ref={audioRef} src={audio}></audio>
         </div>
       </div>
