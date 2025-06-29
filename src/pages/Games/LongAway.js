@@ -41,7 +41,7 @@ export default function LongAway() {
         <div>
           <h1 className='font-BebasNeueRegular text-white text-xl sm:text-5xl leading-relaxed'>PIXEE ORGINAL SOUND TRACK</h1>
           <p className='text-sm sm:text-xl mt-4 text-text-color font-IMBPlex'>Music Composed And Produced By Kamyab</p>
-          <div className='flex gap-5 mt-5 items-center'>
+          <div className='flex flex-wrap gap-5 mt-5 items-center'>
             <h1 className='text-sm sm:text-xl font-IMBPlex text-secondery-color'>LongAway SoundTrack</h1>
             <h1 className='text-sm sm:text-xl font-BebasNeueRegular text-text-color'>LISTEN ON</h1>
             <div className='flex items-center justify-center gap-2'>

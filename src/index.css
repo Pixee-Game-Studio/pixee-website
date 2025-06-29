@@ -49,184 +49,68 @@
         src: url(./assets/Fonts/Bebas_Neue/BebasNeue-Regular.ttf);
     }
     
+    .css-typing {
+        width: 100%;
+        max-width: 100vw;
+    }
+
     .css-typing p {
         border-right: 2px solid white;
         white-space: nowrap;
         overflow: hidden;
+        width: 0;
+        color: white;
+        font-family: monospace;
+        font-size: 3.5vw;
+        max-width: 100%;
     }
-    
+
+    @media (min-width: 640px) {
+        .css-typing p {
+            font-size: 1.1rem;
+        }
+    }
+
+    @media (min-width: 1024px) {
+        .css-typing p {
+            font-size: 1.3rem;
+        }
+    }
+
+    /* Animations per line */
     .css-typing p:nth-child(1) {
-        width: 80%;
-        -webkit-animation: type 2s steps(40, end);
-        animation: type 2s steps(40, end);
-        -webkit-animation-fill-mode: forwards;
-        animation-fill-mode: forwards;
+        animation: type 2.5s steps(60, end) forwards;
     }
-    
+
     .css-typing p:nth-child(2) {
-        width: 100%;
-        opacity: 0;
-        -webkit-animation: type2 2s steps(40, end);
-        animation: type2 2s steps(40, end);
-        -webkit-animation-delay: 2s;
-        animation-delay: 2s;
-        -webkit-animation-fill-mode: forwards;
-        animation-fill-mode: forwards;
+        animation: type 3s steps(60, end) forwards;
+        animation-delay: 2.5s;
     }
-    
+
     .css-typing p:nth-child(3) {
-        width: 100%;
-        opacity: 0;
-        -webkit-animation: type3 4s steps(40, end);
-        animation: type3 2s steps(40, end);
-        -webkit-animation-delay: 4s;
-        animation-delay: 4s;
-        -webkit-animation-fill-mode: forwards;
-        animation-fill-mode: forwards;
+        animation: type 2.5s steps(60, end) forwards;
+        animation-delay: 5.5s;
     }
-    
+
     .css-typing p:nth-child(4) {
-        width: 100%;
-        opacity: 0;
-        -webkit-animation: type4 2s steps(30, end), blink .5s step-end infinite alternate;
-        animation: type4 2s steps(30, end), blink .5s step-end infinite alternate;
-        -webkit-animation-delay: 6s;
-        animation-delay: 6s;
-        -webkit-animation-fill-mode: forwards;
-        animation-fill-mode: forwards;
+        animation: type 3s steps(60, end) forwards, blink 0.7s step-end infinite alternate;
+        animation-delay: 8s;
     }
 
-    .custom-bullet {
-        width: 30px;
-        height: 3px;
-        margin-top: 30px;
-        background-color: #fff;
-        border-radius: 1px;
-        transition: all 0.3s;
-        cursor: pointer;
-    }
-
-    .custom-bullet.swiper-pagination-bullet-active {
-        width: 110px;
-        height: 3px;
-        cursor: pointer;
-        background: #FF2222;
-        border-radius: 1px;
-    }
-    
+    /* Typing animation */
     @keyframes type {
-        0% {
-            width: 0;
-        }
-        99.9% {
-            border-right: .15em solid white;
-        }
-        100% {
-            border: none;
-        }
+    from {
+        width: 0;
     }
-    
-    @-webkit-keyframes type {
-        0% {
-            width: 0;
+        to {
+            width: 100%;
         }
-        99.9% {
-            border-right: .15em solid white;
-        }
-        100% {
-            border: none;
-        }
-    }
-    
-    @keyframes type2 {
-        0% {
-            width: 0;
-        }
-        1% {
-            opacity: 1;
-        }
-        99.9% {
-            border-right: .15em solid white;
-        }
-        100% {
-            opacity: 1;
-            border: none;
-        }
-    }
-    
-    @-webkit-keyframes type2 {
-        0% {
-            width: 0;
-        }
-        1% {
-            opacity: 1;
-        }
-        99.9% {
-            border-right: .15em solid white;
-        }
-        100% {
-            opacity: 1;
-            border: none;
-        }
-    }
-    
-    @keyframes type3 {
-        0% {
-            width: 0;
-        }
-        1% {
-            opacity: 1;
-        }
-        100% {
-            opacity: 1;
-            border: none;
-        }
-    }
-    
-    @-webkit-keyframes type3 {
-        0% {
-            width: 0;
-        }
-        1% {
-            opacity: 1;
-        }
-        100% {
-            opacity: 1;
-        }
-    }
-    
-    @keyframes type4 {
-        0% {
-            width: 0;
-        }
-        1% {
-            opacity: 1;
-        }
-        100% {
-            opacity: 1;
-        }
-    }
-    
-    @-webkit-keyframes type4 {
-        0% {
-            width: 0;
-        }
-        1% {
-            opacity: 1;
-        }
-        100% {
-            opacity: 1;
-        }      
     }
 
+    /* Blinking cursor */
     @keyframes blink {
         50% {
             border-color: transparent;
-        }
-    }
-    @-webkit-keyframes blink {
-        50% {
-            border-color: tranparent;
         }
     }
 }
