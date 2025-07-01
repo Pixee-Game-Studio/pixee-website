@@ -20,31 +20,31 @@
     }
 
     @font-face {
-        font-family: IBM Bold;
+        font-family: 'IBM Bold', monospace, sans-serif;
         font-display: swap;
         src: url(./assets/Fonts/IBM_Plex_Mono/IBMPlexMono-Bold.ttf);
     }
     
     @font-face {
-        font-family: IBM Medium;
+        font-family: 'IBM Medium', monospace, sans-serif;
         font-display: swap;
         src: url(./assets/Fonts/IBM_Plex_Mono/IBMPlexMono-Medium.ttf);
     }
     
     @font-face {
-        font-family: IBM SemiBold;
+        font-family: 'IBM SemiBold', monospace, sans-serif;
         font-display: swap;
         src: url(./assets/Fonts/IBM_Plex_Mono/IBMPlexMono-SemiBold.ttf);
     }
         
     @font-face {
-        font-family: TestSohneMono;
+        font-family: 'TestSohneMono';
         font-display: swap;
         src: url(./assets/Fonts/TestSohne/TestSohneMono-Buch-BF663d89cbcec64.otf);
     }
 
     @font-face {
-        font-family: BebasNeueRegular;
+        font-family: 'BebasNeueRegular';
         font-display: swap;
         src: url(./assets/Fonts/Bebas_Neue/BebasNeue-Regular.ttf);
     }

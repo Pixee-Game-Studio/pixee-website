@@ -33,7 +33,7 @@ export default function LongAway() {
             </a>
           </div>
           <div>
-            <img src={BookImage} className='hidden lg:block lg:w-[400px]' />
+            <img src={BookImage} className='hidden lg:block lg:w-[400px]' alt='story book image' />
           </div>
         </div>
       </div>

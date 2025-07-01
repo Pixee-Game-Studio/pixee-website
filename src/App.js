@@ -11,23 +11,25 @@ import { Routes, Route } from "react-router-dom";
 import LongAway from "./pages/Games/LongAway";
 import TheLastOfUs from "./pages/Games/TheLastOfUs";
 import RedDead from "./pages/Games/RedDead";
+import NotFound from "./pages/NotFound";
 
 function App() {
   return (
-    <div className="h-screen bg-cover bg-center">
-      <div className="inset-0 bg-noise-bg bg-repeat">
+    <div className="min-h-screen bg-cover bg-center">
+      <div className="bg-noise-bg bg-repeat">
         <Header />
         <div>
           <Home />
           <Studio />
-          <img src={BarbWarn} className="w-full py-10" />
+          <img src={BarbWarn} className="w-full py-10" alt="Bar warn image" />
           <Games />
           <Routes>
             <Route path="/" element={<LongAway />} />
             <Route path="/thelastofus" element={<TheLastOfUs />} />
             <Route path="/reddead" element={<RedDead />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
-          <img src={BarbWarn} className="w-full pb-10" />
+          <img src={BarbWarn} alt="Bar warn image" className="w-full pb-10" aria-hidden="true" role="presentation" />
           <Contact />
         </div>
         <Footer />
