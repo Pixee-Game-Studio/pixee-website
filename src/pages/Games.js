@@ -33,7 +33,7 @@ export default function Games() {
           <p>navigating a world of loyalty, survival, and tough moral choices.</p>
         </div>
         <p className='mt-3 text-white text-xs sm:text-lg lg:text-xl leading-relaxed font-TestSohneMono inline-block'><span className='text-secondery-color'>Download</span> now and dive into a world you won’t <br/> want to leave!</p>
-        <a href="#" className='transition-all mt-4 w-[150px] sm:w-[250px] h-[40px] sm:h-[50px] items-center font-TestSohneMono justify-center flex bg-transparent hover:bg-transparent border-[1px] text-xs sm:text-lg lg:text-xl text-white'>Purchase to order</a>
+        <Link to="#" className='transition-all mt-4 w-[150px] sm:w-[250px] h-[40px] sm:h-[50px] items-center font-TestSohneMono justify-center flex bg-transparent hover:bg-transparent border-[1px] text-xs sm:text-lg lg:text-xl text-white'>Purchase to order</Link>
       </div>
       <div>
         <div className="relative w-[300px] sm:w-[500px] -mt-16">

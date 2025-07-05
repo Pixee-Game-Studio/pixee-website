@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import BookImage from '../../assets/Images/book.png'
 import PianoImage from '../../assets/Images/piano.png'
 import Spotify from '../../assets/Images/spotify-img.svg'
@@ -19,7 +20,7 @@ export default function LongAway() {
               <h2 className='font-BebasNeueRegular text-white text-xl sm:text-4xl'>THE PIXEE STORY</h2>
             </div>
             <p className='text-white max-w-[800px] text-xs sm:text-lg lg:text-xl leading-relaxed mt-4 mb-5 font-TestSohneMono'>At The trans-national MURKOFF CORPORATION tirelessly pushes the frontier of scientific research and development. Partnering with the greatest minds of tomorrow, Murkoff expands the reach of every branch of scientific inquiry, including gene therapy, behavioral psychology, information technology, and medicine. In the event of mistake or oversight, the MURKOFF INSURANCE MITIGATION DEPARTMENT comes in to minimize economic fallout. Mitigation Officers are damage control. They are not here to save lives or help people, they are here to make sure it doesn’t cost the company any more than it has to...</p>
-            <a href='#' className='relative text-white ml-2'>
+            <Link to="#" className='relative text-white ml-2'>
               <span className='group hover:transition-all before:text-secondery-color after:text-secondery-color font-IMBPlex text-xl sm:text-2xl before:content-["["] before:absolute before:-left-1 before:-translate-x-2.5 after:content-["]"] after:absolute after:-right-1 after:translate-x-2.5 hover:before:-translate-x-3 hover:after:translate-x-3'>
                 <span className='transition-colors text-base sm:text-xl group-hover:animate-wiggle'>R</span>
                 <span className='transition-colors text-base sm:text-xl'>E</span>
@@ -30,7 +31,7 @@ export default function LongAway() {
                 <span className='transition-colors text-base sm:text-xl'>R</span>
                 <span className='transition-colors text-base sm:text-xl group-hover:animate-wiggle2'>E</span>
               </span>
-            </a>
+            </Link>
           </div>
           <div>
             <img src={BookImage} className='hidden lg:block lg:w-[400px]' alt='story book image' />

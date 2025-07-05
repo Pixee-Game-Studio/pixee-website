@@ -8,24 +8,6 @@ module.exports = {
         "TestSohneMono": ['TestSohneMono', 'sans-serif'],
       },
 
-      container: {
-        center: true,
-        padding: {
-          DEFAULT: '20px',
-          sm: '20px',
-          lg: '70px',
-          xl: '200px',
-          '2xl': '300px',
-        },
-        screens: {
-          sm: '100%',
-          md: '728px',
-          lg: '1024px',
-          xl: '1280px',
-          '2xl': '1440px',
-        },
-      },
-
     extend: {
       animation: {
         wiggle: 'wiggle 0.2s linear',
@@ -59,6 +41,24 @@ module.exports = {
         '0%, 100%': { transform: 'scaleY(1)' },
         '50%': { transform: 'scaleY(3)' }
       }
+    },
+
+    container: {
+      center: true,
+      padding: {
+        DEFAULT: '20px',
+        sm: '20px',
+        lg: '70px',
+        xl: '200px',
+        '2xl': '300px',
+      },
+      screens: {
+        sm: '100%',
+        md: '728px',
+        lg: '1024px',
+        xl: '1280px',
+        '2xl': '1440px',
+      },
     },
   },
   plugins: [

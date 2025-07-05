@@ -1,4 +1,5 @@
 import React, { useRef, useState } from 'react'
+import { Link } from 'react-router-dom'
 import audio from '../../assets/the-price-abby-holliday-musicbed.mp3'
 
 export default function Navbar() {
@@ -22,18 +23,18 @@ export default function Navbar() {
           <h1 className='text-lg'>Logo</h1>
         </div>
         <ul className='hidden lg:inline-flex absolute left-1/2 transform -translate-x-1/2 space-x-6'>
-          <a href="#" class="relative text-lg font-IMBPlex inline-block before:content-[''] before:absolute before:left-0 before:top-1/2 before:h-[2px] before:w-0 before:bg-secondery-color before:translate-y-[-50%] before:transition-all before:duration-300 hover:before:w-full">
+          <Link to="#" className="relative text-lg font-IMBPlex inline-block before:content-[''] before:absolute before:left-0 before:top-1/2 before:h-[2px] before:w-0 before:bg-secondery-color before:translate-y-[-50%] before:transition-all before:duration-300 hover:before:w-full">
             HOME
-          </a>
-          <a href="#" class="relative text-lg font-IMBPlex inline-block before:content-[''] before:absolute before:left-0 before:top-1/2 before:h-[2px] before:w-0 before:bg-secondery-color before:translate-y-[-50%] before:transition-all before:duration-300 hover:before:w-full">
+          </Link>
+          <Link to="#" className="relative text-lg font-IMBPlex inline-block before:content-[''] before:absolute before:left-0 before:top-1/2 before:h-[2px] before:w-0 before:bg-secondery-color before:translate-y-[-50%] before:transition-all before:duration-300 hover:before:w-full">
             STUDIO
-          </a>
-          <a href="#" class="relative text-lg font-IMBPlex inline-block before:content-[''] before:absolute before:left-0 before:top-1/2 before:h-[2px] before:w-0 before:bg-secondery-color before:translate-y-[-50%] before:transition-all before:duration-300 hover:before:w-full">
+          </Link>
+          <Link to="#" className="relative text-lg font-IMBPlex inline-block before:content-[''] before:absolute before:left-0 before:top-1/2 before:h-[2px] before:w-0 before:bg-secondery-color before:translate-y-[-50%] before:transition-all before:duration-300 hover:before:w-full">
             GAMES
-          </a>
-          <a href="#" class="relative text-lg font-IMBPlex inline-block before:content-[''] before:absolute before:left-0 before:top-1/2 before:h-[2px] before:w-0 before:bg-secondery-color before:translate-y-[-50%] before:transition-all before:duration-300 hover:before:w-full">
+          </Link>
+          <Link to="#" className="relative text-lg font-IMBPlex inline-block before:content-[''] before:absolute before:left-0 before:top-1/2 before:h-[2px] before:w-0 before:bg-secondery-color before:translate-y-[-50%] before:transition-all before:duration-300 hover:before:w-full">
             CONTACT
-          </a>
+          </Link>
         </ul>
         <div className='flex items-center space-x-5'>
           <button className='flex items-center justify-center text-lg gap-2' onClick={() => playSoundHandler()}>
