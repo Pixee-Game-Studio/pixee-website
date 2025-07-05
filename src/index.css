@@ -113,4 +113,24 @@
             border-color: transparent;
         }
     }
+
+    .custom-pagination {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1px;
+        margin-top: 30px;
+    }
+
+    .custom-bullet {
+        width: 35px;
+        height: 3px;
+        background-color: white;
+        transition: 0.1s ease-in;
+    }
+
+    .custom-bullet.swiper-pagination-bullet-active {
+        background-color: #FF2222;
+        width: 120px;
+    }
 }
