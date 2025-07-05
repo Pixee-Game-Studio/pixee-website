@@ -4,7 +4,7 @@ import BookImage from '../../assets/Images/book.png'
 import PianoImage from '../../assets/Images/piano.png'
 import Spotify from '../../assets/Images/spotify-img.svg'
 import SoundCloud from '../../assets/Images/soundcloud-img.svg'
-import Youtube from '../../assets/Images/youtube-img.svg'
+import Steam from '../../assets/Images/steam.png'
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -47,7 +47,7 @@ export default function LongAway() {
             <h1 className='text-sm sm:text-xl font-BebasNeueRegular text-text-color'>LISTEN ON</h1>
             <div className='flex items-center justify-center gap-2'>
               <img className="w-6 cursor-pointer" src={Spotify} alt="spotify image" />
-              <img className="w-8 cursor-pointer" src={Youtube} alt="youtube image" />
+              <img className="w-8 cursor-pointer" src={Steam} alt="Steam image" />
               <img className="w-8 cursor-pointer" src={SoundCloud} alt="soundcloud image" />
             </div>
           </div>

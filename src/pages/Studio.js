@@ -1,8 +1,8 @@
 import React from 'react'
-import GithubImg from '../assets/Images/github-img.svg'
-import YoutubeImg from '../assets/Images/youtube-img.svg'
-import DiscordImg from '../assets/Images/discord-img.svg'
-import XImg from '../assets/Images/x-img.svg'
+import GithubImg from '../assets/Images/github.png'
+import SteamImg from '../assets/Images/steam.png'
+import InstagramImg from '../assets/Images/instagram.png'
+import DiscordImg from '../assets/Images/discord.png'
 
 export default function Studio() {
   return (
@@ -32,9 +32,9 @@ export default function Studio() {
             <h1 className='text-text-color font-IMBPlex text-sm lg:text-xl'>SOCIAL MEDIA</h1>
             <div className='flex items-center gap-3 justify-center'>
               <img src={GithubImg} className='lg:w-9 w-7 cursor-pointer hover:text-secondery-color transition-colors' alt='github img' />
-              <img src={YoutubeImg} className='lg:w-8 w-6 cursor-pointer hover:text-secondery-color transition-colors' alt='youtube img' />
+              <img src={SteamImg} className='lg:w-8 w-6 cursor-pointer hover:text-secondery-color transition-colors' alt='steam img' />
+              <img src={InstagramImg} className='z lg:w-8 w-6 cursor-pointer hover:text-secondery-color transition-colors' alt='instagram img' />
               <img src={DiscordImg} className='lg:w-8 w-6 cursor-pointer hover:text-secondery-color transition-colors' alt='discord img' />
-              <img src={XImg} className='z lg:w-8 w-6 cursor-pointer hover:text-secondery-color transition-colors' alt='x img' />
             </div>
           </div>
         </div>
