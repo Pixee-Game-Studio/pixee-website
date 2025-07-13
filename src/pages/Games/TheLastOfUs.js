@@ -2,9 +2,9 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import BookImage from '../../assets/Images/book.png'
 import PianoImage from '../../assets/Images/piano.png'
-import Spotify from '../../assets/Images/spotify-img.svg'
-import SoundCloud from '../../assets/Images/soundcloud-img.svg'
-import Steam from '../../assets/Images/steam.png'
+import Spotify from '../../assets/Images/spotify.png'
+import SoundCloud from '../../assets/Images/soundcloud.png'
+import YouTube from '../../assets/Images/youtube.png'
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -13,7 +13,7 @@ export default function LongAway() {
   return (
     <div>
       <div className='bg-story-page-bg'>
-        <div className='container sm:h-[100vh] flex justify-between items-center gap-10 mx-auto w-full mt-32 py-14'>
+        <div className='container sm:h-[800px] flex justify-between items-center gap-10 mx-auto w-full mt-32 py-14'>
           <div className=''>
             <div>
               <p className='font-BebasNeueRegular text-secondery-color text-sm sm:text-xl'>STOTY BOOK</p>
@@ -47,7 +47,7 @@ export default function LongAway() {
             <h1 className='text-sm sm:text-xl font-BebasNeueRegular text-text-color'>LISTEN ON</h1>
             <div className='flex items-center justify-center gap-2'>
               <img className="w-6 cursor-pointer" src={Spotify} alt="spotify image" />
-              <img className="w-8 cursor-pointer" src={Steam} alt="Steam image" />
+              <img className="w-8 cursor-pointer" src={YouTube} alt="youtube image" />
               <img className="w-8 cursor-pointer" src={SoundCloud} alt="soundcloud image" />
             </div>
           </div>

@@ -3,6 +3,7 @@ import memberImg from '../assets/Images/member-img.png'
 import { useRef } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
+import arrow from '../assets/Images/arrow.png'
 
 export default function Contact() {
 
@@ -114,8 +115,12 @@ export default function Contact() {
           </SwiperSlide>
         </Swiper>
         <div className="flex gap-4">
-          <button className='bg-white' onClick={() => swiperRef.current.slidePrev()}>Prev</button>
-          <button className='bg-white' onClick={() => swiperRef.current.slideNext()}>Next</button>
+          <button className='bg-white' onClick={() => swiperRef.current.slidePrev()}>
+            <img src={arrow} className='rotate-180' />
+          </button>
+          <button className='bg-white' onClick={() => swiperRef.current.slideNext()}>
+            <img src={arrow} />
+          </button>
         </div>
         </div>
       </div>

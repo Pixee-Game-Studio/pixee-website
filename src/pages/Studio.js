@@ -17,7 +17,7 @@ export default function Studio() {
             <p className='text-white text-xs sm:text-lg max-w-[1200px] lg:text-xl leading-relaxed mt-4 font-TestSohneMono'>At <span className='text-secondery-color'>Pixee Game</span> Studio, we’re a small team of dreamers who love making fun and creative games. We believe games should spark imagination and bring joy to players of all ages. Whether it’s a tiny mobile game or a big adventure, we put our heart into every pixel.</p>
           </div>
         </div>
-        <hr className='w-full' />
+        <hr className='w-full border-[#717171]' />
         <div className='flex w-full justify-between mx-auto px-0 flex-wrap gap-10 sm:px[30px] lg:px-[80px]'>
           <h1 className='text-secondery-color text-2xl lg:text-3xl font-BebasNeueRegular'>INFO</h1>
           <div>
@@ -28,13 +28,13 @@ export default function Studio() {
             <p className='text-text-color font-IMBPlex text-sm lg:text-xl'>GENER</p>
             <h1 className='text-white font-IMBPlex text-sm lg:text-xl'>Survival-Horror</h1>
           </div>
-          <div className='flex flex-col gap-1.5'>
+          <div className='hidden sm:flex flex-col gap-1.5'>
             <h1 className='text-text-color font-IMBPlex text-sm lg:text-xl'>SOCIAL MEDIA</h1>
             <div className='flex items-center gap-3 justify-center'>
-              <img src={GithubImg} className='lg:w-9 w-7 cursor-pointer hover:text-secondery-color transition-colors' alt='github img' />
-              <img src={SteamImg} className='lg:w-8 w-6 cursor-pointer hover:text-secondery-color transition-colors' alt='steam img' />
-              <img src={InstagramImg} className='z lg:w-8 w-6 cursor-pointer hover:text-secondery-color transition-colors' alt='instagram img' />
-              <img src={DiscordImg} className='lg:w-8 w-6 cursor-pointer hover:text-secondery-color transition-colors' alt='discord img' />
+              <img src={GithubImg} className='lg:w-8 w-6 cursor-pointer hover:text-secondery-color transition-colors' alt='github img' />
+              <img src={SteamImg} className='lg:w-7 w-5 cursor-pointer hover:text-secondery-color transition-colors' alt='steam img' />
+              <img src={InstagramImg} className='z lg:w-7 w-6 cursor-pointer hover:text-secondery-color transition-colors' alt='instagram img' />
+              <img src={DiscordImg} className='lg:w-7 w-5 cursor-pointer hover:text-secondery-color transition-colors' alt='discord img' />
             </div>
           </div>
         </div>

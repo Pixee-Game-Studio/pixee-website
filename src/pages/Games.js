@@ -3,6 +3,7 @@ import { useRef } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 import GameImage from '../assets/Images/gameImage.png'
+import TypingAnimation from '../components/TypingAnimation/TypingAnimation'
 
 export default function Games() {
   const slides = [
@@ -26,12 +27,7 @@ export default function Games() {
           <Link to='/thelastofus' className='transition-all bg-dust-bg w-[70px] sm:w-[100px] h-[25px] sm:h-[35px] pt-1 items-center justify-center flex bg-white font-BebasNeueRegular hover:bg-blood-bg hover:bg-transparent hover:text-white hover:border-[1px] hover:transition-all text-xs sm:text-lg text-[#000]'>THE LAST OF US</Link>
           <Link to='/reddead' className='transition-all bg-dust-bg w-[70px] wsm:-[100px] h h-[25px]-sm:[35px] pt-1 items-center justify-center flex bg-white font-BebasNeueRegular hover:bg-blood-bg hover:bg-transparent hover:text-white hover:border-[1px] hover:transition-all text-xs sm:text-lg text-[#000]'>REDDEAD</Link>
         </div>
-        <div class="css-typing mt-6">
-          <p>Long Away is an open-world action-adventure game by</p>
-          <p>Pixee Studio, set in the fading days of the American Wild West.</p>
-          <p>You play as Arthur Morgan (in RDR2) or John Marston (in RDR1),</p>
-          <p>navigating a world of loyalty, survival, and tough moral choices.</p>
-        </div>
+        <TypingAnimation />
         <p className='mt-3 text-white text-xs sm:text-lg lg:text-xl leading-relaxed font-TestSohneMono inline-block'><span className='text-secondery-color'>Download</span> now and dive into a world you won’t <br/> want to leave!</p>
         <Link to="#" className='transition-all mt-4 w-[150px] sm:w-[250px] h-[40px] sm:h-[50px] items-center font-TestSohneMono justify-center flex bg-transparent hover:bg-transparent border-[1px] text-xs sm:text-lg lg:text-xl text-white'>Purchase to order</Link>
       </div>
