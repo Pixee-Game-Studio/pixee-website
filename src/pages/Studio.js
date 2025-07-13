@@ -14,7 +14,7 @@ export default function Studio() {
               <p className='font-BebasNeueRegular text-secondery-color text-sm sm:text-xl'>THE STUDIO</p>
               <h2 className='font-BebasNeueRegular text-white text-xl sm:text-4xl'>ABOUT PIXEE STUDIO</h2>
             </div>
-            <p className='text-white text-xs sm:text-lg max-w-[1200px] lg:text-xl leading-relaxed mt-4 font-TestSohneMono'>At <span className='text-secondery-color'>Pixee Game</span> Studio, we’re a small team of dreamers who love making fun and creative games. We believe games should spark imagination and bring joy to players of all ages. Whether it’s a tiny mobile game or a big adventure, we put our heart into every pixel.</p>
+            <p className='text-white text-xs sm:text-lg max-w-[1200px] lg:text-xl leading-relaxed mt-2 font-TestSohneMono'>At <span className='text-secondery-color'>Pixee Game</span> Studio, we’re a small team of dreamers who love making fun and creative games. We believe games should spark imagination and bring joy to players of all ages. Whether it’s a tiny mobile game or a big adventure, we put our heart into every pixel.</p>
           </div>
         </div>
         <hr className='w-full border-[#717171]' />

@@ -20,6 +20,7 @@ module.exports = {
       backgroundImage: {
         'noise-bg': "url('/src/assets/Images/noise-img.png')",
         'dust-bg': "url('/src/assets/Images/Dust.png')",
+        'piano-bg': "url('/src/assets/Images/piano.png')",
         'story-page-bg': "url('/src/assets/Images/story-page-bg.png')",
         'blood-bg': "url('/src/assets/Images/BloodSpatter.png')"
       },

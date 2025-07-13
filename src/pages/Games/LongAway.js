@@ -38,7 +38,7 @@ export default function LongAway() {
           </div>
         </div>
       </div>
-      <div className='container text-center xl:text-left flex items-center flex-col relative justify-between xl:flex-row gap-24 w-full mx-auto mt-20'>
+      <div className='container text-center xl:text-left flex items-center flex-col relative justify-between xl:flex-row xl:gap-24 w-full mx-auto mt-20'>
         <div>
           <h1 className='font-BebasNeueRegular text-white text-xl sm:text-5xl leading-relaxed'>PIXEE ORGINAL SOUND TRACK</h1>
           <p className='text-sm sm:text-xl mt-4 text-text-color font-IMBPlex'>Music Composed And Produced By Kamyab</p>
@@ -46,9 +46,9 @@ export default function LongAway() {
             <h1 className='text-sm sm:text-xl font-IMBPlex text-secondery-color'>LongAway SoundTrack</h1>
             <h1 className='text-sm sm:text-xl font-BebasNeueRegular text-text-color'>LISTEN ON</h1>
             <div className='flex items-center justify-center gap-2'>
-              <img className="w-6 cursor-pointer" src={Spotify} alt="spotify image" />
-              <img className="w-8 cursor-pointer" src={YouTube} alt="youtube image" />
-              <img className="w-8 cursor-pointer" src={SoundCloud} alt="soundcloud image" />
+              <img className="w-5 cursor-pointer" src={Spotify} alt="spotify image" />
+              <img className="w-7 cursor-pointer" src={YouTube} alt="youtube image" />
+              <img className="w-7 cursor-pointer" src={SoundCloud} alt="soundcloud image" />
             </div>
           </div>
         </div>
