@@ -13,8 +13,8 @@ export default function LongAway() {
   return (
     <div>
       <div className='bg-story-page-bg'>
-        <div className='container sm:h-[800px] flex justify-between items-center gap-10 mx-auto w-full mt-32 py-14'>
-          <div className=''>
+          <div className='container sm:h-[800px] flex justify-between items-center gap-10 mx-auto w-full mt-14 lg:mt-32 py-14'>
+          <div>
             <div>
               <p className='font-BebasNeueRegular text-secondery-color text-sm sm:text-xl'>STOTY BOOK</p>
               <h2 className='font-BebasNeueRegular text-white text-xl sm:text-4xl'>THE PIXEE STORY</h2>
