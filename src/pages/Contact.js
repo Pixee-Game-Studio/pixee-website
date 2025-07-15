@@ -4,6 +4,8 @@ import { useRef } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 import arrow from '../assets/Images/arrow.png'
+import textsMarks1 from '../assets/Images/textsmarks1.png'
+import textsMarks2 from '../assets/Images/textsmarks2.png'
 
 export default function Contact() {
 
@@ -89,9 +91,11 @@ export default function Contact() {
           <SwiperSlide>
             <div>
               <p className='text-white text-xs sm:text-lg lg:text-xl leading-relaxed mt-4 mb-5 font-TestSohneMono'>
+                <img src={textsMarks1} className='absolute' />
                 Graphic design is a practical art that helps in communication. Visual information is formed in a way that produces a message. This can be done by placing words and pictures in ways that will get the attention of others. In printed media, graphic design includes typography, organizing illustration, book design, page layout.
               </p>
-              <p className='text-white text-xs sm:text-lg lg:text-xl leading-relaxed mt-4 mb-5 font-TestSohneMono'>
+              <p className='relative flex items-center text-white text-xs sm:text-lg lg:text-xl leading-relaxed mt-4 mb-5 font-TestSohneMono'>
+                <img src={textsMarks2} className='absolute top-7 -left-8' />
                 Graphic design can be done in different media. These include paper, video, labels, and web sites. Their skills include color theory, design principles, understanding of art, etc. Modern graphic design tries to make the message easy to read and understand and also grab attention and be memorable. Almost every marketing campaign uses graphic design
               </p>
             </div>
@@ -99,6 +103,7 @@ export default function Contact() {
           <SwiperSlide>
             <div>
               <p className='text-white text-xs sm:text-lg lg:text-xl leading-relaxed mt-4 mb-5 font-TestSohneMono'>
+                <img src={textsMarks1} className='absolute left-2' />
                 Visual information is formed in a way that produces a message. This can be done by placing words and pictures in ways that will get the attention of others. In printed media, graphic design includes typography, organizing illustration, book design, page layout.
               </p>
               <p className='text-white text-xs sm:text-xl  mt-4 mb-5 font-TestSohneMono'>
@@ -107,11 +112,10 @@ export default function Contact() {
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div>
-              <p className='text-white text-xs sm:text-lg lg:text-xl leading-relaxed mt-4 mb-5 font-TestSohneMono'>
-                Graphic design is a practical art that helps in communication. Visual information is formed in a way that produces a message. This can be done by placing words and pictures in ways that will get the attention of others. In printed media, graphic design includes typography, organizing illustration, book design, page layout.
-              </p>
-            </div>
+            <p className='text-white text-xs sm:text-lg lg:text-xl leading-relaxed mt-4 mb-5 font-TestSohneMono'>
+              <img src={textsMarks2} className='absolute top-4 -left-10' />
+              Graphic design is a practical art that helps in communication. Visual information is formed in a way that produces a message. This can be done by placing words and pictures in ways that will get the attention of others. In printed media, graphic design includes typography, organizing illustration, book design, page layout.
+            </p>
           </SwiperSlide>
         </Swiper>
         <div className="flex gap-4">

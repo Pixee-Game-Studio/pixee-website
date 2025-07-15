@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { useRef, useState } from 'react';
+import { useRef, useState, useEffect } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 import GameImage from '../assets/Images/gameImage.png'
@@ -7,9 +7,10 @@ import GameImage1 from '../assets/Images/gameImage1.png'
 import GameImage2 from '../assets/Images/gameImage2.png'
 import GameImage3 from '../assets/Images/gameImage3.png'
 import TypingAnimation from '../components/TypingAnimation/TypingAnimation'
+import timerImg from '../assets/Images/timerImg.png'
+import Timer from '../components/timer/useTimer'
 
 export default function Games() {
-  
   const [activeIndex, setActiveIndex] = useState(0);
   const prevRef = useRef(null);
   const nextRef = useRef(null); 
@@ -35,9 +36,11 @@ export default function Games() {
           <h2 className='font-BebasNeueRegular text-white text-xl sm:text-4xl'>THE PIXEE'S GAMES</h2>
         </div>
         <div className='flex gap-2 mt-2'>
-          <Link to='/' className='transition-all bg-dust-bg w-[70px] sm:w-[100px] h-[25px] sm:h-[35px] pt-1 items-center justify-center flex bg-white font-BebasNeueRegular hover:bg-blood-bg hover:bg-transparent hover:text-white hover:border-[1px] hover:transition-all text-xs sm:text-lg text-[#000]'>LONG AWAY</Link>
-          <Link to='/thelastofus' className='transition-all bg-dust-bg w-[70px] sm:w-[100px] h-[25px] sm:h-[35px] pt-1 items-center justify-center flex bg-white font-BebasNeueRegular hover:bg-blood-bg hover:bg-transparent hover:text-white hover:border-[1px] hover:transition-all text-xs sm:text-lg text-[#000]'>THE LAST OF US</Link>
-          <Link to='/reddead' className='transition-all bg-dust-bg w-[70px] wsm:-[100px] h h-[25px]-sm:[35px] pt-1 items-center justify-center flex bg-white font-BebasNeueRegular hover:bg-blood-bg hover:bg-transparent hover:text-white hover:border-[1px] hover:transition-all text-xs sm:text-lg text-[#000]'>REDDEAD</Link>
+          <Link to='/' className='transition-all bg-dust-bg w-[70px] sm:w-[100px] h-[25px] sm:h-[35px] pt-1 items-center justify-center flex bg-white font-BebasNeueRegular hover:bg-blood-bg hover:bg-transparent hover:text-white hover:border-[1px] hover:transition-all text-xs sm:text-xl text-[#000]'>LONG AWAY</Link>
+          <div className='flex relative w-[350px]'>
+            <img src={timerImg} alt='timer image' className='absolute right-4 -top-6' />
+            <Timer deadline="2025-08-15T23:59:59" />
+          </div>
         </div>
         <TypingAnimation />
         <p className='mt-3 text-white text-xs sm:text-lg lg:text-xl max-w-[300px] sm:max-w-[500px] leading-relaxed font-TestSohneMono inline-block'><span className='text-secondery-color'>Download</span> now and dive into a world you won’t want to leave!</p>

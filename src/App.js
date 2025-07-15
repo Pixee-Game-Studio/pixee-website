@@ -9,8 +9,6 @@ import Contact from './pages/Contact'
 import BarbWarn from './assets/Images/barb-warn.png'
 import { Routes, Route } from "react-router-dom";
 import LongAway from "./pages/Games/LongAway";
-import TheLastOfUs from "./pages/Games/TheLastOfUs";
-import RedDead from "./pages/Games/RedDead";
 import NotFound from "./pages/NotFound";
 
 function App() {
@@ -25,8 +23,8 @@ function App() {
           <Games />
           <Routes>
             <Route path="/" element={<LongAway />} />
-            <Route path="/thelastofus" element={<TheLastOfUs />} />
-            <Route path="/reddead" element={<RedDead />} />
+            {/* <Route path="/thelastofus" element={<TheLastOfUs />} />
+            <Route path="/reddead" element={<RedDead />} /> */}
             <Route path="*" element={<NotFound />} />
           </Routes>
           <img src={BarbWarn} alt="Bar warn image" className="w-full pb-10" aria-hidden="true" role="presentation" />
