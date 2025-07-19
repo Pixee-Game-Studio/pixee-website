@@ -1,44 +1,72 @@
-import React from 'react'
-import GithubImg from '../assets/Images/github.png'
-import SteamImg from '../assets/Images/steam.png'
-import InstagramImg from '../assets/Images/instagram.png'
-import DiscordImg from '../assets/Images/discord.png'
+import React from 'react';
+import GithubImg from '../assets/Images/github.png';
+import SteamImg from '../assets/Images/steam.png';
+import InstagramImg from '../assets/Images/instagram.png';
+import DiscordImg from '../assets/Images/discord.png';
 
 export default function Studio() {
   return (
-    <>
-      <div className='container flex items-center justify-centerflex flex-col gap-10 justify-center w-full mx-auto xl:px-[50px]'>
-        <div className='flex items-center md:text-center justify-center gap-8'>
+    <div className="container mx-auto flex w-full flex-col justify-center gap-10 xl:px-[50px]">
+      <div className="flex items-center justify-center gap-8 md:text-center">
+        <div>
           <div>
-            <div>
-              <p className='font-BebasNeueRegular text-secondery-color text-sm sm:text-xl'>THE STUDIO</p>
-              <h2 className='font-BebasNeueRegular text-white text-xl sm:text-4xl'>ABOUT PIXEE STUDIO</h2>
-            </div>
-            <p className='text-white text-xs sm:text-lg lg:text-xl max-w-[1300px] leading-relaxed mt-2 font-TestSohneMono'>We are a small but passionate team of game developers brought together by a deep love for the horror genre. Our goal is not just to make games but to craft experiences that redefine the boundaries of fear, creativity, and surprise. We aim to go beyond clichés, creating unique, breathtaking, and unforgettable works that immerse players in a whole new style of horror games unlike anything they've experienced before.</p>
+            <p className="font-BebasNeueRegular text-sm text-secondery-color sm:text-xl">
+              THE STUDIO
+            </p>
+            <h2 className="font-BebasNeueRegular text-xl text-white sm:text-4xl">
+              ABOUT PIXEE STUDIO
+            </h2>
           </div>
+          <p className="mt-2 max-w-[1300px] font-TestSohneMono text-xs leading-relaxed text-white sm:text-lg lg:text-xl">
+            We are a small but passionate team of game developers brought together by a deep love
+            for the horror genre. Our goal is not just to make games but to craft experiences that
+            redefine the boundaries of fear, creativity, and surprise. We aim to go beyond clichés,
+            creating unique, breathtaking, and unforgettable works that immerse players in a whole
+            new style of horror games unlike anything they've experienced before.
+          </p>
         </div>
-        <hr className='w-full border-[#717171]' />
-        <div className='flex w-full justify-between mx-auto px-0 flex-wrap gap-10 sm:px[30px] lg:px-[80px]'>
-          <h1 className='text-secondery-color text-2xl lg:text-3xl font-BebasNeueRegular'>INFO</h1>
-          <div>
-            <p className='text-text-color font-IMBPlex text-sm lg:text-xl'>RELEASE DATE</p>
-            <h1 className='text-white font-IMBPlex text-sm lg:text-xl'>September,4th2013</h1>
-          </div>
-          <div>
-            <p className='text-text-color font-IMBPlex text-sm lg:text-xl'>GENER</p>
-            <h1 className='text-white font-IMBPlex text-sm lg:text-xl'>Survival-Horror</h1>
-          </div>
-          <div className='hidden sm:flex flex-col gap-1.5'>
-            <h1 className='text-text-color font-IMBPlex text-sm lg:text-xl'>SOCIAL MEDIA</h1>
-            <div className='flex items-center gap-3 justify-center'>
-              <img src={GithubImg} className='lg:w-8 w-6 cursor-pointer hover:text-secondery-color transition-colors' alt='github img' />
-              <img src={SteamImg} className='lg:w-7 w-5 cursor-pointer hover:text-secondery-color transition-colors' alt='steam img' />
-              <img src={InstagramImg} className='z lg:w-7 w-6 cursor-pointer hover:text-secondery-color transition-colors' alt='instagram img' />
-              <img src={DiscordImg} className='lg:w-7 w-5 cursor-pointer hover:text-secondery-color transition-colors' alt='discord img' />
-            </div>
+      </div>
+      <hr className="w-full border-[#717171]" />
+      <div className="sm:px[30px] mx-auto flex w-full flex-wrap justify-between gap-10 px-0 lg:px-[80px]">
+        <h1 className="font-BebasNeueRegular text-2xl text-secondery-color lg:text-3xl">INFO</h1>
+        <div>
+          <p className="font-IMBPlex text-sm text-text-color lg:text-xl">RELEASE DATE</p>
+          <h1 className="font-IMBPlex text-sm text-white lg:text-xl">September,4th2013</h1>
+        </div>
+        <div>
+          <p className="font-IMBPlex text-sm text-text-color lg:text-xl">GENRE</p>
+          <h1 className="font-IMBPlex text-sm text-white lg:text-xl">Survival-Horror</h1>
+        </div>
+        <div className="hidden flex-col gap-1.5 sm:flex">
+          <h1 className="font-IMBPlex text-sm text-text-color lg:text-xl">SOCIAL MEDIA</h1>
+          <div className="flex items-center justify-center gap-3">
+            <img
+              src={GithubImg}
+              className="w-6 cursor-pointer transition-colors hover:text-secondery-color lg:w-8"
+              alt="Pixee Studio GitHub profile"
+              loading="lazy"
+            />
+            <img
+              src={SteamImg}
+              className="w-5 cursor-pointer transition-colors hover:text-secondery-color lg:w-7"
+              alt="Pixee Studio Steam page"
+              loading="lazy"
+            />
+            <img
+              src={InstagramImg}
+              className="z w-6 cursor-pointer transition-colors hover:text-secondery-color lg:w-7"
+              alt="Pixee Studio Instagram profile"
+              loading="lazy"
+            />
+            <img
+              src={DiscordImg}
+              className="w-5 cursor-pointer transition-colors hover:text-secondery-color lg:w-7"
+              alt="Pixee Studio Discord server"
+              loading="lazy"
+            />
           </div>
         </div>
       </div>
-    </>
-  )
+    </div>
+  );
 }

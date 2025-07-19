@@ -1,15 +1,15 @@
-import React from "react";
-import './index.css'
-import Header from './components/Header/Header'
-import Footer from './components/Footer/Footer'
-import Home from "./pages/Home";
-import Studio from './pages/Studio'
-import Games from './pages/Games'
-import Contact from './pages/Contact'
-import BarbWarn from './assets/Images/barb-warn.png'
-import { Routes, Route } from "react-router-dom";
-import LongAway from "./pages/Games/LongAway";
-import NotFound from "./pages/NotFound";
+import React from 'react';
+import './index.css';
+import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
+import Home from './pages/Home';
+import Studio from './pages/Studio';
+import Games from './pages/Games';
+import Contact from './pages/Contact';
+import BarbWarn from './assets/Images/barb-warn.webp';
+import { Routes, Route } from 'react-router-dom';
+import LongAway from './pages/Games/LongAway';
+import NotFound from './pages/NotFound';
 
 function App() {
   return (
@@ -23,11 +23,15 @@ function App() {
           <Games />
           <Routes>
             <Route path="/" element={<LongAway />} />
-            {/* <Route path="/thelastofus" element={<TheLastOfUs />} />
-            <Route path="/reddead" element={<RedDead />} /> */}
             <Route path="*" element={<NotFound />} />
           </Routes>
-          <img src={BarbWarn} alt="Bar warn image" className="w-full pb-10" aria-hidden="true" role="presentation" />
+          <img
+            src={BarbWarn}
+            alt="Bar warn image"
+            className="w-full pb-10"
+            aria-hidden="true"
+            role="presentation"
+          />
           <Contact />
         </div>
         <Footer />

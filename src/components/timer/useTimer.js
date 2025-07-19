@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState } from 'react';
 
 const CountdownTimer = ({ deadline }) => {
   const calculateTimeLeft = () => {
@@ -31,7 +31,7 @@ const CountdownTimer = ({ deadline }) => {
   }, [deadline]); // فقط به deadline وابسته باشه، نه timeLeft
 
   if (!timeLeft) {
-    return <h2 className="text-red-600 text-xl">⏳ زمان تموم شد یا تاریخ اشتباهه!</h2>;
+    return <h2 className="text-xl text-red-600">⏳ زمان تموم شد یا تاریخ اشتباهه!</h2>;
   }
 
   return (
@@ -52,8 +52,9 @@ const CountdownTimer = ({ deadline }) => {
     //     </div>
     //   </div>
     // </div>
-    <a className='transition-all bg-dust-bg w-[70px] sm:w-[100px] h-[25px] sm:h-[35px] pt-1 items-center justify-center flex bg-white font-BebasNeueRegular hover:bg-blood-bg hover:bg-transparent hover:text-white hover:border-[1px] hover:transition-all text-xs sm:text-lg text-[#000]'>{timeLeft.days} : {timeLeft.hours} : {timeLeft.minutes} : {timeLeft.seconds}</a>
-
+    <a className="flex h-[25px] w-[70px] cursor-pointer items-center justify-center bg-white bg-dust-bg pt-1 font-BebasNeueRegular text-xs text-[#000] transition-all hover:border-[1px] hover:bg-transparent hover:bg-blood-bg hover:text-white hover:transition-all sm:h-[35px] sm:w-[100px] sm:text-lg">
+      {timeLeft.days} : {timeLeft.hours} : {timeLeft.minutes} : {timeLeft.seconds}
+    </a>
   );
 };
 
