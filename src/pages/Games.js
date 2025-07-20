@@ -47,7 +47,7 @@ export default function Games() {
         </p>
         <Link
           to="#"
-          className="mt-4 flex h-[40px] w-[150px] items-center justify-center border-[1px] bg-transparent font-TestSohneMono text-xs text-white transition-all hover:bg-transparent sm:h-[50px] sm:w-[250px] sm:text-lg lg:text-xl"
+          className="mt-4 flex h-[40px] w-[150px] items-center justify-center border-[1px] bg-transparent font-TestSohneMono text-xs text-white transition-all hover:bg-transparent sm:h-[50px] sm:w-[250px] sm:text-lg lg:text-xl hover:bg-white hover:text-black hover:border-black"
         >
           Purchase to order
         </Link>

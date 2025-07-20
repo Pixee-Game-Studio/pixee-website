@@ -6,12 +6,20 @@ import SteamImg from '../../assets/Images/steam.png';
 import InstagramImg from '../../assets/Images/instagram.png';
 import DiscordImg from '../../assets/Images/discord.png';
 import BarbWarn from '../../assets/Images/barb-warn.webp';
+import { gsap } from "gsap";
+import { SplitText } from "gsap/SplitText";
+
+gsap.registerPlugin(SplitText);
 
 export default function Header() {
   const audioRef = useRef(null);
   const [isSoundPlay, setIsSoundPlay] = useState(false);
   const [isOpenNav, setIsOpenNav] = useState(true);
-
+  
+  const navHandler = () => {
+    setIsOpenNav((prev) => !prev);
+  }
+  
   const playSoundHandler = () => {
     if (!audioRef.current) return;
     if (isSoundPlay) {
@@ -20,9 +28,7 @@ export default function Header() {
       audioRef.current.play();
     }
     setIsSoundPlay((prev) => !prev);
-  };
-
-  const navHandler = () => setIsOpenNav((prev) => !prev);
+  };  
 
   return (
     <>
@@ -138,7 +144,7 @@ export default function Header() {
           <img src={BarbWarn} className="w-full" alt="Bar warn image" />
         )}
       </header>
-      <div className={isOpenNav ? 'hidden' : 'container mt-3 flex flex-col gap-5'}>
+      <div className={isOpenNav ? 'hidden' : 'nav container mt-3 flex flex-col gap-5'}>
         <ul className="flex transform flex-col space-y-2 text-white">
           <li>
             <Link

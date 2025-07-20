@@ -1,10 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import bloodHand from '../../assets/Images/bloodHand.png'
 
 export default function Footer() {
   return (
-    <footer className="mt-8 w-full bg-black sm:mt-16 lg:mt-40">
-      <div className="container">
+    <footer className="relative mt-8 w-full bg-black sm:mt-16 lg:mt-40">
+      <div className="relative container z-30">
         <div className="flex flex-wrap items-center justify-between gap-5 py-6 sm:gap-10 sm:pb-16 sm:pt-16 lg:px-14 lg:pt-24">
           <div>
             <h1 className="font-BebasNeueRegular text-xl text-white sm:text-2xl lg:text-4xl">
@@ -58,6 +59,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
+      <img src={bloodHand} alt='Blood hand' className='absolute bottom-0 right-0 z-10' />
     </footer>
   );
 }

@@ -13,7 +13,7 @@ export default function Contact() {
 
   return (
     <>
-      <div className="container mx-auto flex w-full flex-col justify-center lg:flex-row lg:gap-10">
+      <div className="container relative mx-auto flex w-full flex-col justify-center lg:flex-row lg:gap-10 z-40">
         <div className="flex flex-col">
           <div>
             <div>

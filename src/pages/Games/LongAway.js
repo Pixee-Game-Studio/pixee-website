@@ -1,4 +1,4 @@
-import React from 'react';
+import { useEffect } from 'react';
 import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 import BookImage from '../../assets/Images/book.webp';
@@ -37,15 +37,8 @@ export default function LongAway() {
                 THE PIXEE STORY
               </h2>
             </div>
-            <p className="mb-5 mt-4 max-w-[800px] font-TestSohneMono text-xs leading-relaxed text-white sm:text-lg lg:text-xl">
-              At The trans-national MURKOFF CORPORATION tirelessly pushes the frontier of scientific
-              research and development. Partnering with the greatest minds of tomorrow, Murkoff
-              expands the reach of every branch of scientific inquiry, including gene therapy,
-              behavioral psychology, information technology, and medicine. In the event of mistake
-              or oversight, the MURKOFF INSURANCE MITIGATION DEPARTMENT comes in to minimize
-              economic fallout. Mitigation Officers are damage control. They are not here to save
-              lives or help people, they are here to make sure it doesn’t cost the company any more
-              than it has to...
+            <p className="scramble mb-5 mt-4 max-w-[800px] font-TestSohneMono text-xs leading-relaxed text-white sm:text-lg lg:text-xl">
+              The trans-national MURKOFF CORPORATION tirelessly pushes the frontier of scientific research and development. Partnering with the greatest minds of tomorrow, Murkoff expands the reach of every branch of scientific inquiry, including gene therapy, behavioral psychology, information technology, and medicine. In the event of mistake or oversight, the MURKOFF INSURANCE MITIGATION DEPARTMENT comes in to minimize economic fallout. Mitigation Officers are damage control. They are not here to save lives or help people, they are here to make sure it doesn’t cost the company any more than it has to...
             </p>
             <Link to="#" className="relative ml-2 text-white">
               <span className='group font-IMBPlex text-xl before:absolute before:-left-1 before:-translate-x-2.5 before:text-secondery-color before:content-["["] after:absolute after:-right-1 after:translate-x-2.5 after:text-secondery-color after:content-["]"] hover:transition-all hover:before:-translate-x-3 hover:after:translate-x-3 sm:text-2xl'>

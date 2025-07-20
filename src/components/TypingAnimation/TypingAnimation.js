@@ -27,7 +27,7 @@ export default function MultiTyping() {
   }, [currentLine]);
 
   return (
-    <div className="mt-6 w-full max-w-full font-TestSohneMono text-xs leading-relaxed text-white sm:text-sm lg:text-xl">
+    <div className="mt-6 font-TestSohneMono text-xs text-white sm:text-sm lg:text-xl">
       {finishedLines.map((index) => (
         <p key={index}>{lines[index]}</p>
       ))}
