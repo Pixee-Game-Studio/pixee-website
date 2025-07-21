@@ -131,13 +131,13 @@ useEffect(() => {
             />
             <img
               src={InstagramImg}
-              className="z w-6 cursor-pointer transition-colors hover:text-secondery-color lg:w-7"
+              className="z w-5 cursor-pointer transition-colors hover:text-secondery-color lg:w-7"
               alt="Pixee Studio Instagram profile"
               loading="lazy"
             />
             <img
               src={DiscordImg}
-              className="w-5 cursor-pointer transition-colors hover:text-secondery-color lg:w-7"
+              className="w-6 cursor-pointer transition-colors hover:text-secondery-color lg:w-7"
               alt="Pixee Studio Discord server"
               loading="lazy"
             />

@@ -52,7 +52,7 @@ const CountdownTimer = ({ deadline }) => {
     //     </div>
     //   </div>
     // </div>
-    <a className="flex h-[25px] w-[70px] cursor-pointer items-center justify-center bg-white bg-dust-bg pt-1 font-BebasNeueRegular text-xs text-[#000] transition-all hover:border-[1px] hover:bg-transparent hover:bg-blood-bg hover:text-white hover:transition-all sm:h-[35px] sm:w-[100px] sm:text-lg">
+    <a className="flex h-[25px] w-[70px] cursor-pointer items-center justify-center pt-1 font-BebasNeueRegular text-xs transition-all border-[1px] bg-transparent hover:transition-all hover:bg-blood-bg text-white sm:h-[35px] sm:w-[100px] sm:text-lg">
       {timeLeft.days} : {timeLeft.hours} : {timeLeft.minutes} : {timeLeft.seconds}
     </a>
   );

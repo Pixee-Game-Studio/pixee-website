@@ -80,30 +80,32 @@ export default function LongAway() {
           <p className="mt-4 font-IMBPlex text-sm text-text-color sm:text-xl">
             Music Composed And Produced By Kamyab
           </p>
-          <div className="mt-5 flex flex-wrap items-center gap-5">
+          <div className="mt-5 flex flex-wrap items-center justify-center gap-5">
             <h1 className="font-IMBPlex text-sm text-secondery-color sm:text-xl">
               LongAway SoundTrack
             </h1>
-            <h1 className="font-BebasNeueRegular text-sm text-text-color sm:text-xl">LISTEN ON</h1>
-            <div className="flex items-center justify-center gap-2">
-              <img
-                className="w-5 cursor-pointer"
-                src={Spotify}
-                alt="Listen to LongAway soundtrack on Spotify"
-                loading="lazy"
-              />
-              <img
-                className="w-7 cursor-pointer"
-                src={YouTube}
-                alt="Listen to LongAway soundtrack on YouTube"
-                loading="lazy"
-              />
-              <img
-                className="w-7 cursor-pointer"
-                src={SoundCloud}
-                alt="Listen to LongAway soundtrack on SoundCloud"
-                loading="lazy"
-              />
+            <div className='flex items-center gap-5 justify-center'>
+              <h1 className="font-BebasNeueRegular text-sm text-text-color sm:text-xl">LISTEN ON</h1>
+              <div className="flex items-center justify-center gap-2">
+                <img
+                  className="w-5 cursor-pointer"
+                  src={Spotify}
+                  alt="Listen to LongAway soundtrack on Spotify"
+                  loading="lazy"
+                />
+                <img
+                  className="w-7 cursor-pointer"
+                  src={YouTube}
+                  alt="Listen to LongAway soundtrack on YouTube"
+                  loading="lazy"
+                />
+                <img
+                  className="w-7 cursor-pointer"
+                  src={SoundCloud}
+                  alt="Listen to LongAway soundtrack on SoundCloud"
+                  loading="lazy"
+                />
+              </div>
             </div>
           </div>
         </div>

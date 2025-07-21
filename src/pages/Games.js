@@ -20,8 +20,8 @@ export default function Games() {
   const images = [GameImage1, GameImage2, GameImage3];
 
   return (
-    <div className="container mx-auto flex w-full flex-col items-center justify-center gap-8 sm:gap-40 lg:mt-20 xl:flex-row xl:gap-24">
-      <div>
+    <div className="container mx-auto flex w-full flex-col items-center justify-center gap-8 md::gap-40 lg:mt-20 xl:flex-row xl:gap-24">
+      <div className='mx-auto w-full leading-relaxed'>
         <div>
           <p className="font-BebasNeueRegular text-xs text-secondery-color sm:text-xl">GAMES</p>
           <h2 className="font-BebasNeueRegular text-xl text-white sm:text-4xl">
@@ -31,12 +31,12 @@ export default function Games() {
         <div className="mt-2 flex gap-2">
           <Link
             to="/"
-            className="flex h-[25px] w-[70px] items-center justify-center bg-white bg-dust-bg pt-1 font-BebasNeueRegular text-xs text-[#000] transition-all hover:border-[1px] hover:bg-transparent hover:bg-blood-bg hover:text-white hover:transition-all sm:h-[35px] sm:w-[100px] sm:text-xl"
+            className="flex h-[25px] w-[70px] max-w-full items-center justify-center bg-white bg-dust-bg pt-1 font-BebasNeueRegular text-xs text-[#000] transition-all hover:border-[1px] hover:bg-transparent hover:bg-blood-bg hover:text-white hover:transition-all sm:h-[35px] sm:w-[100px] sm:text-xl"
           >
             LONG AWAY
           </Link>
           <div className="relative flex w-[350px]">
-            <img src={timerImg} alt="timer image" className="absolute -top-6 right-4" />
+            <img src={timerImg} alt="timer image" className="absolute -top-4 sm:-top-6 left-20 sm:left-28 xl:right-4 w-6/12 sm:w-3/5" />
             <Timer deadline="2025-08-15T23:59:59" />
           </div>
         </div>
@@ -110,7 +110,7 @@ export default function Games() {
               el: '.custom-pagination',
               clickable: true,
               renderBullet: (index, className) => {
-                return `<span class="${className} custom-bullet"></span>`;
+                return `<span key={${index}} class="${className} custom-bullet"></span>`;
               },
               bulletClass: 'custom-bullet',
             }}

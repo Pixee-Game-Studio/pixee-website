@@ -149,7 +149,7 @@ export default function Header() {
           <li>
             <Link
               to="#"
-              className="relative font-IMBPlex text-base before:absolute before:left-0 before:top-1/2 before:h-[2px] before:w-0 before:translate-y-[-50%] before:bg-secondery-color before:transition-all before:duration-300 before:content-[''] hover:before:w-full"
+              className="relative font-IMBPlex text-xl before:absolute before:left-0 before:top-1/2 before:h-[2px] before:w-0 before:translate-y-[-50%] before:bg-secondery-color before:transition-all before:duration-300 before:content-[''] hover:before:w-full"
             >
               HOME
             </Link>
@@ -158,7 +158,7 @@ export default function Header() {
           <li>
             <Link
               to="#"
-              className="relative font-IMBPlex text-base before:absolute before:left-0 before:top-1/2 before:h-[2px] before:w-0 before:translate-y-[-50%] before:bg-secondery-color before:transition-all before:duration-300 before:content-[''] hover:before:w-full"
+              className="relative font-IMBPlex text-xl before:absolute before:left-0 before:top-1/2 before:h-[2px] before:w-0 before:translate-y-[-50%] before:bg-secondery-color before:transition-all before:duration-300 before:content-[''] hover:before:w-full"
             >
               STUDIO
             </Link>
@@ -167,7 +167,7 @@ export default function Header() {
           <li>
             <Link
               to="#"
-              className="relative font-IMBPlex text-base before:absolute before:left-0 before:top-1/2 before:h-[2px] before:w-0 before:translate-y-[-50%] before:bg-secondery-color before:transition-all before:duration-300 before:content-[''] hover:before:w-full"
+              className="relative font-IMBPlex text-xl before:absolute before:left-0 before:top-1/2 before:h-[2px] before:w-0 before:translate-y-[-50%] before:bg-secondery-color before:transition-all before:duration-300 before:content-[''] hover:before:w-full"
             >
               GAMES
             </Link>
@@ -176,7 +176,7 @@ export default function Header() {
           <li>
             <Link
               to="#"
-              className="relative font-IMBPlex text-base before:absolute before:left-0 before:top-1/2 before:h-[2px] before:w-0 before:translate-y-[-50%] before:bg-secondery-color before:transition-all before:duration-300 before:content-[''] hover:before:w-full"
+              className="relative font-IMBPlex text-xl before:absolute before:left-0 before:top-1/2 before:h-[2px] before:w-0 before:translate-y-[-50%] before:bg-secondery-color before:transition-all before:duration-300 before:content-[''] hover:before:w-full"
             >
               CONTACT
             </Link>
@@ -186,12 +186,12 @@ export default function Header() {
           <div className="flex items-center gap-3">
             <img
               src={SteamImg}
-              className="w-7 cursor-pointer transition-colors hover:text-secondery-color"
+              className="w-6 cursor-pointer transition-colors hover:text-secondery-color"
               alt="steam image"
             />
             <img
               src={YoutubeImg}
-              className="w-8 cursor-pointer transition-colors hover:text-secondery-color"
+              className="w-7 cursor-pointer transition-colors hover:text-secondery-color"
               alt="youtube image"
             />
             <img
@@ -201,7 +201,7 @@ export default function Header() {
             />
             <img
               src={DiscordImg}
-              className="w-8 cursor-pointer transition-colors hover:text-secondery-color"
+              className="w-7 cursor-pointer transition-colors hover:text-secondery-color"
               alt="discord image"
             />
           </div>

@@ -33,7 +33,7 @@ export default function MultiTyping() {
       ))}
 
       {currentLine < lines.length && (
-        <p>
+        <div>
           <Typewriter
             key={currentLine}
             words={[lines[currentLine]]}
@@ -43,7 +43,7 @@ export default function MultiTyping() {
             typeSpeed={50}
             deleteSpeed={0}
           />
-        </p>
+        </div>
       )}
     </div>
   );

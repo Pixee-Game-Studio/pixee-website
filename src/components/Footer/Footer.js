@@ -27,7 +27,7 @@ export default function Footer() {
               Here, every email could be the beginning of <br /> something unforeseen.
             </h1>
             <div className="mt-5 font-TestSohneMono text-xs text-white sm:text-sm lg:text-base">
-              <h1>Email Studio : pixeestudio@gmail.com</h1>
+              <h1>Studio's Email : pixeestudio@gmail.com</h1>
               <h1>Location : Iran,Tehran</h1>
             </div>
           </div>
