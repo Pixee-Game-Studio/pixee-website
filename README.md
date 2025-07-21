@@ -1,70 +1,72 @@
-# Getting Started with Create React App
+<br>
+<h2 align="center">
+  <br>
+  <br>
+</h3>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h4 align="center">
+  Official website for <strong>Pixee Studio</strong> — creators of immersive psychological horror games for PC.
+</h4>
 
-## Available Scripts
+<p align="center">
+  <a href="">
+    <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="Gitter">
+  </a>
+  <a href="">
+    <img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E">
+  </a>
+  <a href="">
+    <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white">
+  </a>
+    <a href="">
+    <img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white">
+  </a>
+</p>
 
-In the project directory, you can run:
+<img width="1920" height="1080" alt="44" src="https://github.com/user-attachments/assets/59cd0edc-4596-4542-9eb6-ba2ff5449ab3" />
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🧠 About Pixee Studio
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+**Pixee Studio** is an indie game development studio focused on crafting deep and disturbing **psychological horror** experiences for PC gamers. Our mission is to immerse players in unsettling worlds that stay with them long after the screen fades to black.
 
-### `npm test`
+## 📸 Screenshots
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<img width="500" height="1080" alt="Capture8" src="https://github.com/user-attachments/assets/0cb0e239-cec6-4141-a1da-dd18968cf1e8" />
+<img width="500" height="1080" alt="Capture6" src="https://github.com/user-attachments/assets/9f6005f0-463d-49a9-b2eb-99ceeb1f152c" />
 
-### `npm run build`
+## 🛠️ **Tech Stack**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Frontend**: ReactJS, Tailwind CSS, JavaScript
+- **Animations**: GSAP
+- **Routing**: React Router
+- **Design Tool**: Figma (Arman Ebtekari)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🚀 **Installation**
+To run this website locally:
+   ```bash
+    # Clone this repository
+    $ git clone https://github.com/KianEbtekari0/pixee-website.git
+    
+    # Go into the repository
+    $ cd pixee-website
+    
+    # Install dependencies
+    $ npm install
+    
+    # Run the app
+    $ npm start
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 📬 **Contact**
+For questions or suggestions, feel free to reach out:
 
-### `npm run eject`
+Email: kianebtekari0@gmail.com
+<br>
+Email: armanebtekari7@gmail.com
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🙌 Credits
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- **UI/UX Design**: [@Armanebtekari](https://github.com/Armanebtekari)
+- **Frontend Developer**: [@KianEbtekari0](https://github.com/KianEbtekari)
