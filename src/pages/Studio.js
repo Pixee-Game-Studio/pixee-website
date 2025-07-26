@@ -84,7 +84,7 @@ useEffect(() => {
   }, [])
 
   return (
-    <div className="container mx-auto flex w-full flex-col justify-center gap-10 xl:px-[50px]">
+    <div id='studio' className="container mx-auto flex w-full flex-col justify-center gap-10 xl:px-[50px]">
       <div className="flex items-center justify-center gap-8 md:text-center">
         <div>
           <div>

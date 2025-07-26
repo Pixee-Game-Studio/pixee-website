@@ -20,7 +20,7 @@ export default function Games() {
   const images = [GameImage1, GameImage2, GameImage3];
 
   return (
-    <div className="container mx-auto flex w-full flex-col items-center justify-center gap-8 md::gap-40 lg:mt-20 xl:flex-row xl:gap-24">
+    <div id='games' className="container mx-auto flex w-full flex-col items-center justify-center gap-8 md::gap-40 lg:mt-20 xl:flex-row xl:gap-24">
       <div className='mx-auto w-full leading-relaxed'>
         <div>
           <p className="font-BebasNeueRegular text-xs text-secondery-color sm:text-xl">GAMES</p>
@@ -42,7 +42,7 @@ export default function Games() {
         </div>
         <TypingAnimation />
         <p className="mt-3 inline-block max-w-[300px] font-TestSohneMono text-xs leading-relaxed text-white sm:max-w-[500px] sm:text-lg lg:text-xl">
-          <span className="text-secondery-color">Download</span>
+          <span className="text-secondery-color">Download </span>
           now and dive into a world you won’t
           want to leave!
         </p>
@@ -57,7 +57,6 @@ export default function Games() {
         <Swiper
           modules={[Navigation, Pagination]}
           spaceBetween={20}
-          loop={true}
           onSwiper={(swiper) => (swiperRef.current = swiper)}
           onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
           pagination={{

@@ -37,25 +37,25 @@ export default function Header() {
           <h1 className="text-lg">Logo</h1>
           <ul className="absolute left-1/2 hidden -translate-x-1/2 transform space-x-6 lg:inline-flex">
             <Link
-              to="#"
+              to="home"
               className="relative inline-block font-IMBPlex text-lg before:absolute before:left-0 before:top-1/2 before:h-[2px] before:w-0 before:translate-y-[-50%] before:bg-secondery-color before:transition-all before:duration-300 before:content-[''] hover:before:w-full"
             >
               HOME
             </Link>
             <Link
-              to="#"
+              to="studio"
               className="relative inline-block font-IMBPlex text-lg before:absolute before:left-0 before:top-1/2 before:h-[2px] before:w-0 before:translate-y-[-50%] before:bg-secondery-color before:transition-all before:duration-300 before:content-[''] hover:before:w-full"
             >
               STUDIO
             </Link>
             <Link
-              to="#"
+              to="games"
               className="relative inline-block font-IMBPlex text-lg before:absolute before:left-0 before:top-1/2 before:h-[2px] before:w-0 before:translate-y-[-50%] before:bg-secondery-color before:transition-all before:duration-300 before:content-[''] hover:before:w-full"
             >
               GAMES
             </Link>
             <Link
-              to="#"
+              to="contact"
               className="relative inline-block font-IMBPlex text-lg before:absolute before:left-0 before:top-1/2 before:h-[2px] before:w-0 before:translate-y-[-50%] before:bg-secondery-color before:transition-all before:duration-300 before:content-[''] hover:before:w-full"
             >
               CONTACT

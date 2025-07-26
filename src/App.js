@@ -14,7 +14,7 @@ function App() {
   return (
     <div className="min-h-screen bg-cover bg-center">
       <div className="bg-noise-bg bg-repeat">
-        <Header />
+        <Header sectionIDs={['home', 'studio']} />
         <div>
           <Home />
           <Studio />
