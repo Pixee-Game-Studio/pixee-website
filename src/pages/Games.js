@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import React, { useRef, useState } from 'react';
+import { useRef, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 import GameImage from '../assets/Images/gameImage.webp';
@@ -11,7 +11,7 @@ import timerImg from '../assets/Images/timerImg.png';
 import Timer from '../components/timer/useTimer';
 
 export default function Games() {
-  const [activeIndex, setActiveIndex] = useState(0);
+  const [, setActiveIndex] = useState(0);
   const prevRef = useRef(null);
   const nextRef = useRef(null);
   const swiperRef = useRef(null);
@@ -36,17 +36,18 @@ export default function Games() {
             LONG AWAY
           </Link>
           <div className="relative flex w-[350px]">
-            <img src={timerImg} alt="timer image" className="absolute -top-4 sm:-top-6 left-20 sm:left-28 xl:right-4 w-6/12 sm:w-3/5" />
+            <img src={timerImg} alt="timer" className="absolute -top-4 sm:-top-6 left-20 sm:left-28 xl:right-4 w-6/12 sm:w-3/5" />
             <Timer deadline="2025-08-15T23:59:59" />
           </div>
         </div>
         <TypingAnimation />
         <p className="mt-3 inline-block max-w-[300px] font-TestSohneMono text-xs leading-relaxed text-white sm:max-w-[500px] sm:text-lg lg:text-xl">
-          <span className="text-secondery-color">Download</span> now and dive into a world you won’t
+          <span className="text-secondery-color">Download</span>
+          now and dive into a world you won’t
           want to leave!
         </p>
         <Link
-          to="#"
+          to="/"
           className="mt-4 flex h-[40px] w-[150px] items-center justify-center border-[1px] bg-transparent font-TestSohneMono text-xs text-white transition-all hover:bg-transparent sm:h-[50px] sm:w-[250px] sm:text-lg lg:text-xl hover:bg-white hover:text-black hover:border-black"
         >
           Purchase to order
@@ -56,7 +57,6 @@ export default function Games() {
         <Swiper
           modules={[Navigation, Pagination]}
           spaceBetween={20}
-          slidesPerView={1}
           loop={true}
           onSwiper={(swiper) => (swiperRef.current = swiper)}
           onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
@@ -79,7 +79,7 @@ export default function Games() {
             <SwiperSlide key={index}>
               <img
                 src={img}
-                alt={`LongAway game screenshot slide ${index + 1}`}
+                alt={`LongAway game slide ${index + 1}`}
                 className="h-64 w-full object-cover aspect-auto"
                 loading="lazy"
               />
@@ -99,49 +99,46 @@ export default function Games() {
           ))}
         </div>
       </div>
-      <div className="hidden lg:block">
-        <div className="relative -mt-16 w-[300px] sm:w-[500px]">
-          <Swiper
-            modules={[Navigation, Pagination, Autoplay]}
-            spaceBetween={30}
-            slidesPerView={1}
-            loop={true}
-            pagination={{
-              el: '.custom-pagination',
-              clickable: true,
-              renderBullet: (index, className) => {
-                return `<span key={${index}} class="${className} custom-bullet"></span>`;
-              },
-              bulletClass: 'custom-bullet',
-            }}
-            navigation={{
-              prevEl: prevRef.current,
-              nextEl: nextRef.current,
-            }}
-            onInit={(swiper) => {
-              swiper.params.navigation.prevEl = prevRef.current;
-              swiper.params.navigation.nextEl = nextRef.current;
-              swiper.navigation.init();
-              swiper.navigation.update();
-            }}
-            autoplay={{
-              delay: 3000,
-              disableOnInteraction: false,
-            }}
-          >
-            {slides.map((src, i) => (
-              <SwiperSlide key={i}>
-                <img
-                  src={src}
-                  alt={`LongAway game screenshot slide ${i + 1}`}
-                  className="w-full cursor-pointer"
-                  loading="lazy"
-                />
-              </SwiperSlide>
-            ))}
-          </Swiper>
-          <div className="custom-pagination flex justify-center space-x-1.5"></div>
-        </div>
+      <div className="hidden lg:block relative -mt-16 w-[300px] sm:w-[500px]">
+        <Swiper
+          modules={[Navigation, Pagination, Autoplay]}
+          spaceBetween={30}
+          loop={true}
+          pagination={{
+            el: '.custom-pagination',
+            clickable: true,
+            renderBullet: (index, className) => {
+              return `<span key={${index}} class="${className} custom-bullet"></span>`;
+            },
+            bulletClass: 'custom-bullet',
+          }}
+          navigation={{
+            prevEl: prevRef.current,
+            nextEl: nextRef.current,
+          }}
+          onInit={(swiper) => {
+            swiper.params.navigation.prevEl = prevRef.current;
+            swiper.params.navigation.nextEl = nextRef.current;
+            swiper.navigation.init();
+            swiper.navigation.update();
+          }}
+          autoplay={{
+            delay: 3000,
+            disableOnInteraction: false,
+          }}
+        >
+          {slides.map((src, i) => (
+            <SwiperSlide key={i}>
+              <img
+                src={src}
+                alt={`LongAway game slide ${i + 1}`}
+                className="w-full cursor-pointer"
+                loading="lazy"
+              />
+            </SwiperSlide>
+          ))}
+        </Swiper>
+        <div className="custom-pagination flex justify-center space-x-1.5"></div>
       </div>
     </div>
   );

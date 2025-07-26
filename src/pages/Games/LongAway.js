@@ -1,4 +1,3 @@
-import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 import BookImage from '../../assets/Images/book.webp';
 import PianoImage from '../../assets/Images/piano.webp';
@@ -12,7 +11,7 @@ import 'swiper/css/pagination';
 export default function LongAway() {
   return (
     <div>
-      <Helmet>
+      {/* <Helmet>
         <title>LongAway | Pixee Studio</title>
         <meta
           name="description"
@@ -24,7 +23,7 @@ export default function LongAway() {
           content="LongAway - یک بازی ترسناک از Pixee Studio. اطلاعات، داستان و موسیقی بازی را اینجا ببینید."
         />
         <meta property="og:type" content="website" />
-      </Helmet>
+      </Helmet> */}
       <div className="bg-story-page-bg">
         <div className="container mx-auto mt-14 flex w-full items-center justify-between gap-10 py-14 sm:h-[800px] lg:mt-32">
           <div>

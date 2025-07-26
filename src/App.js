@@ -1,4 +1,3 @@
-import React from 'react';
 import './index.css';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
@@ -19,7 +18,7 @@ function App() {
         <div>
           <Home />
           <Studio />
-          <img src={BarbWarn} className="w-full py-10" alt="Bar warn image" />
+          <img src={BarbWarn} className="w-full py-10" alt="Bar warn" />
           <Games />
           <Routes>
             <Route path="/" element={<LongAway />} />
@@ -27,7 +26,7 @@ function App() {
           </Routes>
           <img
             src={BarbWarn}
-            alt="Bar warn image"
+            alt="Bar warn"
             className="w-full pb-10"
             aria-hidden="true"
             role="presentation"

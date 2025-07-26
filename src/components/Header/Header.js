@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import { useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import audio from '../../assets/the-price-abby-holliday-musicbed.mp3';
 import YoutubeImg from '../../assets/Images/youtube.png';
@@ -141,7 +141,7 @@ export default function Header() {
         {isOpenNav ? (
           <hr className="border-[#454545] px-[20px]" />
         ) : (
-          <img src={BarbWarn} className="w-full" alt="Bar warn image" />
+          <img src={BarbWarn} className="w-full" alt="Bar warn" />
         )}
       </header>
       <div className={isOpenNav ? 'hidden' : 'nav container mt-3 flex flex-col gap-5'}>
@@ -187,26 +187,26 @@ export default function Header() {
             <img
               src={SteamImg}
               className="w-6 cursor-pointer transition-colors hover:text-secondery-color"
-              alt="steam image"
+              alt="steam icon"
             />
             <img
               src={YoutubeImg}
               className="w-7 cursor-pointer transition-colors hover:text-secondery-color"
-              alt="youtube image"
+              alt="youtube icon"
             />
             <img
               src={InstagramImg}
               className="w-6 cursor-pointer transition-colors hover:text-secondery-color"
-              alt="instagram image"
+              alt="instagram icon"
             />
             <img
               src={DiscordImg}
               className="w-7 cursor-pointer transition-colors hover:text-secondery-color"
-              alt="discord image"
+              alt="discord icon"
             />
           </div>
           <div className="flex gap-4">
-            <a href="#" className="relative ml-2 text-white">
+            <Link to="#" className="relative ml-2 text-white">
               <span className='group font-IMBPlex text-base before:absolute before:-left-1 before:-translate-x-2 before:text-white before:content-["["] after:absolute after:-right-1 after:translate-x-2 after:text-white after:content-["]"] hover:transition-all hover:before:-translate-x-2.5 hover:after:translate-x-2.5'>
                 <span className="text-secondery-color transition-colors group-hover:animate-wiggle">
                   E
@@ -215,7 +215,7 @@ export default function Header() {
                   N
                 </span>
               </span>
-            </a>
+            </Link>
             <h1 className="text-base text-white">FN</h1>
           </div>
         </div>

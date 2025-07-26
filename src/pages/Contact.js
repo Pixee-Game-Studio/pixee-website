@@ -55,17 +55,17 @@ export default function Contact() {
               disableOnInteraction: false,
             }}
           >
-            <SwiperSlide className="">
+            <SwiperSlide>
               <div>
                 <img src={memberImg} alt="Pixee Studio team member" loading="lazy" />
               </div>
             </SwiperSlide>
-            <SwiperSlide className="">
+            <SwiperSlide>
               <div>
                 <img src={memberImg} alt="Pixee Studio team member" loading="lazy" />
               </div>
             </SwiperSlide>
-            <SwiperSlide className="">
+            <SwiperSlide>
               <div>
                 <img src={memberImg} alt="Pixee Studio team member" loading="lazy" />
               </div>

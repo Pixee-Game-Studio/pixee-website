@@ -81,7 +81,7 @@ useEffect(() => {
       duration: 4
     })
     .add(cursorTl);
-  }, []);
+  }, [])
 
   return (
     <div className="container mx-auto flex w-full flex-col justify-center gap-10 xl:px-[50px]">
