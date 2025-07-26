@@ -93,11 +93,11 @@ export default function Header() {
               <h1 className="text-base">FN</h1>
             </div>
             <Link
-              to='#'
+              to='/'
               onClick={() => navHandler()}
               className="flex items-center justify-center font-TestSohneMono sm:hidden"
             >
-              <Link to="#" className="relative ml-2 text-white">
+              <div className="relative ml-2 text-white">
                 {isOpenNav ? (
                   <span className='group font-IMBPlex text-lg before:absolute before:-left-1 before:-translate-x-2 before:text-white before:content-["["] after:absolute after:-right-1 after:translate-x-2 after:text-white after:content-["]"] hover:transition-all hover:before:-translate-x-2.5 hover:after:translate-x-2.5'>
                     <span className="text-base text-secondery-color transition-colors group-hover:animate-wiggle sm:text-lg">
@@ -132,8 +132,8 @@ export default function Header() {
                     </span>
                   </span>
                 )}
-              </Link>
-              <Link className="ml-4 text-base">MENU</Link>
+              </div>
+              <div className="ml-4 text-base">MENU</div>
             </Link>
             <audio ref={audioRef} src={audio}></audio>
           </div>

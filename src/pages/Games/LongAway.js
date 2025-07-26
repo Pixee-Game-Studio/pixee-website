@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 import BookImage from '../../assets/Images/book.webp';
@@ -112,7 +111,7 @@ export default function LongAway() {
         <div className="-z-50">
           <img
             src={PianoImage}
-            alt="Piano image related to LongAway game soundtrack"
+            alt="Piano related to LongAway game soundtrack"
             loading="lazy"
           />
         </div>
