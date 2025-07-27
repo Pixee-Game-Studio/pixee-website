@@ -18,6 +18,7 @@ export default function Header() {
   
   const navHandler = () => {
     setIsOpenNav((prev) => !prev);
+
   }
   
   const playSoundHandler = () => {

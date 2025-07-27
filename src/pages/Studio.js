@@ -9,18 +9,18 @@ import { ScrambleTextPlugin } from "gsap/ScrambleTextPlugin";
 gsap.registerPlugin(ScrambleTextPlugin);
 
 export default function Studio() {
+  const part1 = "We are a small but passionate team of game developers brought together by a deep love for ";
+  const part2 = "Our goal is not just to make games but to craft experiences that redefine the horror genre. ";
+  const part3 = "creativity, and surprise. We aim to go beyond clichés, the boundaries of fear, ";
+  const part4 = "creating unique, breathtaking, and unforgettable works that immerse players in a ";
+  const part5 = "horror games unlike anything they've experienced before. whole new style of";
+  const part6 = "RELEASE DATE";
+  const part7 = "Survival-Horror";
 
-const part1 = "We are a small but passionate team of game developers brought together by a deep love for the horror genre.";
-const part2 = "Our goal is not just to make games but to craft experiences that redefine the boundaries of fear, ";
-const part3 = "creativity, and surprise. We aim to go beyond clichés, creating unique, breathtaking, and unforgettable";
-const part4 = "works that immerse players in a whole new style of horror games unlike anything they've experienced before.";
-const part5 = "RELEASE DATE";
-const part6 = "Survival-Horror";
-
-useEffect(() => {
-  const tl = gsap.timeline({
-    defaults: { ease: "none" }
-  });
+  useEffect(() => {
+    const tl = gsap.timeline({
+      defaults: { ease: "none" }
+    });
 
   const cursorTl = gsap.timeline({ repeat: -1 });
 
@@ -51,10 +51,9 @@ useEffect(() => {
     .to("#scramble-text-3", {
       scrambleText: {
         text: part3,
-        chars: "upperAndLowerCase",
         speed: 0.4
       },
-      duration: 3
+      duration: 4
     })
     .to("#scramble-text-4", {
       scrambleText: {
@@ -68,13 +67,21 @@ useEffect(() => {
       scrambleText: {
         text: part5,
         chars: "upperAndLowerCase",
-        speed: 0.3
+        speed: 0.4
       },
-      duration: 2
+      duration: 4
     })
     .to("#scramble-text-6", {
       scrambleText: {
         text: part6,
+        chars: "upperAndLowerCase",
+        speed: 0.3
+      },
+      duration: 2
+    })
+    .to("#scramble-text-7", {
+      scrambleText: {
+        text: part7,
         chars: "!SOS!",
         speed: 0.4
       },
@@ -95,11 +102,12 @@ useEffect(() => {
               ABOUT PIXEE STUDIO
             </h2>
           </div>
-          <div id="scramble-wrapper" className="mt-2 max-w-[1300px] font-TestSohneMono text-xs leading-relaxed text-white sm:text-lg lg:text-xl">
+          <div id="scramble-wrapper" className="mt-2 sm:max-w-[1300px] font-TestSohneMono text-xs leading-relaxed text-white sm:text-lg lg:text-xl">
             <p id="scramble-text-1"></p>
             <p id="scramble-text-2"></p>
             <p id="scramble-text-3"></p>
             <p id="scramble-text-4"></p>
+            <p id="scramble-text-5"></p>
           </div>
         </div>
       </div>
@@ -107,12 +115,12 @@ useEffect(() => {
       <div className="sm:px[30px] mx-auto flex w-full flex-wrap justify-between gap-10 px-0 lg:px-[80px]">
         <h1 className="font-BebasNeueRegular text-2xl text-secondery-color lg:text-3xl">INFO</h1>
         <div>
-          <p id='scramble-text-5' className="font-IMBPlex text-sm text-text-color lg:text-xl">RELEASE DATE</p>
+          <p id='scramble-text-6' className="font-IMBPlex text-sm text-text-color lg:text-xl">RELEASE DATE</p>
           <h1 className="font-IMBPlex text-sm text-white lg:text-xl">September,4th2013</h1>
         </div>
         <div>
           <p className="font-IMBPlex text-sm text-text-color lg:text-xl">GENRE</p>
-          <h1 id='scramble-text-6' className="font-IMBPlex text-sm text-white lg:text-xl">Survival-Horror</h1>
+          <h1 id='scramble-text-7' className="font-IMBPlex text-sm text-white lg:text-xl">Survival-Horror</h1>
         </div>
         <div className="hidden flex-col gap-1.5 sm:flex">
           <h1 className="font-IMBPlex text-sm text-text-color lg:text-xl">SOCIAL MEDIA</h1>

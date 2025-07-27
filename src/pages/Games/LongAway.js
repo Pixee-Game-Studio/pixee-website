@@ -11,20 +11,7 @@ import 'swiper/css/pagination';
 export default function LongAway() {
   return (
     <div>
-      {/* <Helmet>
-        <title>LongAway | Pixee Studio</title>
-        <meta
-          name="description"
-          content="LongAway - یک بازی ترسناک از Pixee Studio. اطلاعات، داستان و موسیقی بازی را اینجا ببینید."
-        />
-        <meta property="og:title" content="LongAway | Pixee Studio" />
-        <meta
-          property="og:description"
-          content="LongAway - یک بازی ترسناک از Pixee Studio. اطلاعات، داستان و موسیقی بازی را اینجا ببینید."
-        />
-        <meta property="og:type" content="website" />
-      </Helmet> */}
-      <div className="bg-story-page-bg">
+      <div className="bg-story-page-bg w-full relative z-40">
         <div className="container mx-auto mt-14 flex w-full items-center justify-between gap-10 py-14 sm:h-[800px] lg:mt-32">
           <div>
             <div>
@@ -71,7 +58,7 @@ export default function LongAway() {
         </div>
       </div>
       <div className="container relative mx-auto mt-20 flex w-full flex-col items-center justify-between text-center xl:flex-row xl:gap-24 xl:text-left">
-        <div>
+        <div className='z-0'>
           <h1 className="font-BebasNeueRegular text-xl leading-relaxed text-white sm:text-5xl">
             PIXEE ORGINAL SOUND TRACK
           </h1>
@@ -107,12 +94,14 @@ export default function LongAway() {
             </div>
           </div>
         </div>
+        <div className='z-0'>
           <img
             src={PianoImage}
             alt="Piano related to LongAway game soundtrack"
             loading="lazy"
-            className='inset-0 z-0'
+            className=""
           />
+        </div>
       </div>
     </div>
   );

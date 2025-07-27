@@ -13,7 +13,8 @@ import NotFound from './pages/NotFound';
 function App() {
   return (
     <main className="min-h-screen bg-cover bg-center">
-      <div className="bg-noise-bg bg-repeat">
+      <div className="relative">
+        <div className="pointer-events-none absolute inset-0 z-30 bg-noise-bg bg-repeat opacity-70"></div>
         <Header />
         <div>
           <Home />
