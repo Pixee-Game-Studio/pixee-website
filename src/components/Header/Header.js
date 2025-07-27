@@ -36,30 +36,30 @@ export default function Header() {
         <div className="flex h-14 items-center justify-between">
           <h1 className="text-lg">Logo</h1>
           <ul className="absolute left-1/2 hidden -translate-x-1/2 transform space-x-6 lg:inline-flex">
-            <Link
-              to="home"
+            <a
+              href="#home"
               className="relative inline-block font-IMBPlex text-lg before:absolute before:left-0 before:top-1/2 before:h-[2px] before:w-0 before:translate-y-[-50%] before:bg-secondery-color before:transition-all before:duration-300 before:content-[''] hover:before:w-full"
             >
               HOME
-            </Link>
-            <Link
-              to="studio"
+            </a>
+            <a
+              href="#studio"
               className="relative inline-block font-IMBPlex text-lg before:absolute before:left-0 before:top-1/2 before:h-[2px] before:w-0 before:translate-y-[-50%] before:bg-secondery-color before:transition-all before:duration-300 before:content-[''] hover:before:w-full"
             >
               STUDIO
-            </Link>
-            <Link
-              to="games"
+            </a>
+            <a
+              href="#games"
               className="relative inline-block font-IMBPlex text-lg before:absolute before:left-0 before:top-1/2 before:h-[2px] before:w-0 before:translate-y-[-50%] before:bg-secondery-color before:transition-all before:duration-300 before:content-[''] hover:before:w-full"
             >
               GAMES
-            </Link>
-            <Link
-              to="contact"
+            </a>
+            <a
+              href="#contact"
               className="relative inline-block font-IMBPlex text-lg before:absolute before:left-0 before:top-1/2 before:h-[2px] before:w-0 before:translate-y-[-50%] before:bg-secondery-color before:transition-all before:duration-300 before:content-[''] hover:before:w-full"
             >
               CONTACT
-            </Link>
+            </a>
           </ul>
           <div className="flex items-center space-x-5">
             <button
@@ -147,39 +147,39 @@ export default function Header() {
       <div className={isOpenNav ? 'hidden' : 'nav container mt-3 flex flex-col gap-5'}>
         <ul className="flex transform flex-col space-y-2 text-white">
           <li>
-            <Link
-              to="#"
+            <a
+              href="#home"
               className="relative font-IMBPlex text-xl before:absolute before:left-0 before:top-1/2 before:h-[2px] before:w-0 before:translate-y-[-50%] before:bg-secondery-color before:transition-all before:duration-300 before:content-[''] hover:before:w-full"
             >
               HOME
-            </Link>
+            </a>
           </li>
           <hr className="w-full border-[#717171]" />
           <li>
-            <Link
-              to="#"
+            <a
+              href="#studio"
               className="relative font-IMBPlex text-xl before:absolute before:left-0 before:top-1/2 before:h-[2px] before:w-0 before:translate-y-[-50%] before:bg-secondery-color before:transition-all before:duration-300 before:content-[''] hover:before:w-full"
             >
               STUDIO
-            </Link>
+            </a>
           </li>
           <hr className="w-full border-[#717171]" />
           <li>
-            <Link
-              to="#"
+            <a
+              href="#games"
               className="relative font-IMBPlex text-xl before:absolute before:left-0 before:top-1/2 before:h-[2px] before:w-0 before:translate-y-[-50%] before:bg-secondery-color before:transition-all before:duration-300 before:content-[''] hover:before:w-full"
             >
               GAMES
-            </Link>
+            </a>
           </li>
           <hr className="w-full border-[#717171]" />
           <li>
-            <Link
-              to="#"
+            <a
+              href="#contact"
               className="relative font-IMBPlex text-xl before:absolute before:left-0 before:top-1/2 before:h-[2px] before:w-0 before:translate-y-[-50%] before:bg-secondery-color before:transition-all before:duration-300 before:content-[''] hover:before:w-full"
             >
               CONTACT
-            </Link>
+            </a>
           </li>
         </ul>
         <div className="flex items-center justify-between">

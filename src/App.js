@@ -12,9 +12,9 @@ import NotFound from './pages/NotFound';
 
 function App() {
   return (
-    <div className="min-h-screen bg-cover bg-center">
+    <main className="min-h-screen bg-cover bg-center">
       <div className="bg-noise-bg bg-repeat">
-        <Header sectionIDs={['home', 'studio']} />
+        <Header />
         <div>
           <Home />
           <Studio />
@@ -35,7 +35,7 @@ function App() {
         </div>
         <Footer />
       </div>
-    </div>
+    </main>
   );
 }
 

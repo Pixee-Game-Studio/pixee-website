@@ -60,7 +60,7 @@ export default function LongAway() {
               </span>
             </Link>
           </div>
-          <div>
+          <div className=''>
             <img
               src={BookImage}
               className="hidden lg:block lg:w-[400px]"
@@ -107,13 +107,12 @@ export default function LongAway() {
             </div>
           </div>
         </div>
-        <div className="-z-50">
           <img
             src={PianoImage}
             alt="Piano related to LongAway game soundtrack"
             loading="lazy"
+            className='inset-0 z-0'
           />
-        </div>
       </div>
     </div>
   );
