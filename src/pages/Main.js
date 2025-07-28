@@ -7,7 +7,7 @@ import LongAway from './Games/LongAway';
 
 export default function Main() {
   return (
-    <main className='flex-grow'>
+    <main className="flex-grow">
       <Home />
       <Studio />
       <img src={BarbWarn} className="w-full py-10" alt="Bar warn" />
