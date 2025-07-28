@@ -3,7 +3,7 @@ import bloodHand from '../../assets/Images/bloodHand.png';
 
 export default function Footer() {
   return (
-    <footer className="relative z-30 mt-8 w-full bg-black sm:mt-16 lg:mt-40">
+    <footer className="relative z-30 w-full bg-black">
       <div className="container relative z-30">
         <div className="flex flex-wrap items-center justify-between gap-5 py-6 sm:gap-10 sm:pb-16 sm:pt-16 lg:px-14 lg:pt-24">
           <div>

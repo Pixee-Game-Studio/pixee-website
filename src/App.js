@@ -7,12 +7,12 @@ import './index.css';
 
 function App() {
   return (
-    <div className="relative min-h-screen bg-cover bg-center">
+    <div className="relative min-h-screen flex flex-col text-white bg-cover bg-center">
       <div className="pointer-events-none absolute inset-0 z-30 bg-noise-bg bg-repeat opacity-70"></div>
       <Header />
       <Routes>
-        <Route path="/" element={<Main />} />
         <Route path="*" element={<NotFound />} />
+        <Route path="/" element={<Main />} />
       </Routes>
       <Footer />
     </div>

@@ -14,7 +14,7 @@ export default function Contact() {
   return (
     <div
       id="contact"
-      className="container relative z-40 mx-auto flex w-full flex-col justify-center lg:flex-row lg:gap-10"
+      className="container relative z-40 mx-auto flex w-full flex-col justify-center lg:flex-row lg:gap-10 sm:pb-16 lg:pb-24"
     >
       <div className="flex flex-col">
         <div>
