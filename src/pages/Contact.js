@@ -12,7 +12,10 @@ export default function Contact() {
   const swiperRef = useRef(null);
 
   return (
-    <div id='contact' className="container relative mx-auto flex w-full flex-col justify-center lg:flex-row lg:gap-10 z-40">
+    <div
+      id="contact"
+      className="container relative z-40 mx-auto flex w-full flex-col justify-center lg:flex-row lg:gap-10"
+    >
       <div className="flex flex-col">
         <div>
           <div>
@@ -24,11 +27,11 @@ export default function Contact() {
             </h2>
           </div>
           <p className="mb-5 mt-4 font-TestSohneMono text-xs leading-relaxed text-white sm:text-lg lg:text-xl">
-            Behind every game, there’s a team of creative, skilled, and passionate individuals.
-            Our studio members bring together diverse talents in design, programming, art, audio,
-            and production to build unforgettable worlds. We believe that every project is the
-            result of close collaboration, shared passion, and collective experience. Get to know
-            the people who bring our games to life.
+            Behind every game, there’s a team of creative, skilled, and passionate individuals. Our
+            studio members bring together diverse talents in design, programming, art, audio, and
+            production to build unforgettable worlds. We believe that every project is the result of
+            close collaboration, shared passion, and collective experience. Get to know the people
+            who bring our games to life.
           </p>
         </div>
         <Swiper
@@ -104,8 +107,8 @@ export default function Contact() {
                   alt="Pixee Studio story quote mark"
                   loading="lazy"
                 />
-                Graphic design is a practical art that helps in communication. Visual information
-                is formed in a way that produces a message. This can be done by placing words and
+                Graphic design is a practical art that helps in communication. Visual information is
+                formed in a way that produces a message. This can be done by placing words and
                 pictures in ways that will get the attention of others. In printed media, graphic
                 design includes typography, organizing illustration, book design, page layout.
               </p>
@@ -119,8 +122,8 @@ export default function Contact() {
                 Graphic design can be done in different media. These include paper, video, labels,
                 and web sites. Their skills include color theory, design principles, understanding
                 of art, etc. Modern graphic design tries to make the message easy to read and
-                understand and also grab attention and be memorable. Almost every marketing
-                campaign uses graphic design
+                understand and also grab attention and be memorable. Almost every marketing campaign
+                uses graphic design
               </p>
             </div>
           </SwiperSlide>
@@ -134,9 +137,9 @@ export default function Contact() {
                   loading="lazy"
                 />
                 Visual information is formed in a way that produces a message. This can be done by
-                placing words and pictures in ways that will get the attention of others. In
-                printed media, graphic design includes typography, organizing illustration, book
-                design, page layout.
+                placing words and pictures in ways that will get the attention of others. In printed
+                media, graphic design includes typography, organizing illustration, book design,
+                page layout.
               </p>
               <p className="mb-5 mt-4 font-TestSohneMono text-xs text-white sm:text-xl">
                 skills include color theory, design principles, understanding of art, etc. Modern
@@ -165,12 +168,7 @@ export default function Contact() {
             <img src={arrow} className="rotate-180" alt="Previous slide button" loading="lazy" />
           </button>
           <button className="bg-white" onClick={() => swiperRef.current.slideNext()}>
-            <img
-              src={arrow}
-              className="slideshow button"
-              alt="Next slide button"
-              loading="lazy"
-            />
+            <img src={arrow} className="slideshow button" alt="Next slide button" loading="lazy" />
           </button>
         </div>
       </div>

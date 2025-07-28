@@ -32,7 +32,7 @@ const CountdownTimer = ({ deadline }) => {
         days: Math.floor(difference / (1000 * 60 * 60 * 24)),
         hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
         minutes: Math.floor((difference / (1000 * 60)) % 60),
-        seconds: Math.floor((difference / 1000) % 60)
+        seconds: Math.floor((difference / 1000) % 60),
       };
     };
 
@@ -48,7 +48,10 @@ const CountdownTimer = ({ deadline }) => {
   }
 
   return (
-    <a href='/' className="flex h-[25px] w-[70px] cursor-pointer items-center justify-center pt-1 font-BebasNeueRegular text-xs transition-all border-[1px] bg-transparent hover:transition-all hover:bg-blood-bg text-white sm:h-[35px] sm:w-[100px] sm:text-lg">
+    <a
+      href="/"
+      className="flex h-[25px] w-[70px] cursor-pointer items-center justify-center border-[1px] bg-transparent pt-1 font-BebasNeueRegular text-xs text-white transition-all hover:bg-blood-bg hover:transition-all sm:h-[35px] sm:w-[100px] sm:text-lg"
+    >
       {timeLeft.days} : {timeLeft.hours} : {timeLeft.minutes} : {timeLeft.seconds}
     </a>
   );

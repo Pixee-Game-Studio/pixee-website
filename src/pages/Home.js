@@ -1,4 +1,3 @@
-
 export default function Home() {
   return (
     <div id="home" className="container flex h-[90vh] items-center justify-center text-center">

@@ -5,13 +5,16 @@ export default function MultiTyping() {
   const [currentLine, setCurrentLine] = useState(0);
   const [finishedLines, setFinishedLines] = useState([]);
 
-  const lines = useMemo(() => [
-    'It’s 1952. Myla wakes up in a decaying, abandoned place filled ',
-    'with haunting echoes and buried secrets. What begins as a search ',
-    'for answers quickly becomes a fight for sanity, as reality blurs ',
-    'and every shadow feels alive. Explore forgotten corridors and piece ',
-    'together a past that refuses to stay silent. Will you help Myla escape — or become part of the nightmare?'
-  ], [])
+  const lines = useMemo(
+    () => [
+      'It’s 1952. Myla wakes up in a decaying, abandoned place filled ',
+      'with haunting echoes and buried secrets. What begins as a search ',
+      'for answers quickly becomes a fight for sanity, as reality blurs ',
+      'and every shadow feels alive. Explore forgotten corridors and piece ',
+      'together a past that refuses to stay silent. Will you help Myla escape — or become part of the nightmare?',
+    ],
+    []
+  );
 
   useEffect(() => {
     if (currentLine < lines.length) {

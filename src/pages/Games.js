@@ -20,8 +20,11 @@ export default function Games() {
   const images = [GameImage1, GameImage2, GameImage3];
 
   return (
-    <div id='games' className="container mx-auto flex w-full flex-col items-center justify-center gap-8 md::gap-40 lg:mt-20 xl:flex-row xl:gap-24">
-      <div className='mx-auto w-full leading-relaxed'>
+    <div
+      id="games"
+      className="md::gap-40 container mx-auto flex w-full flex-col items-center justify-center gap-8 lg:mt-20 xl:flex-row xl:gap-24"
+    >
+      <div className="mx-auto w-full leading-relaxed">
         <div>
           <p className="font-BebasNeueRegular text-xs text-secondery-color sm:text-xl">GAMES</p>
           <h2 className="font-BebasNeueRegular text-xl text-white sm:text-4xl">
@@ -36,19 +39,22 @@ export default function Games() {
             LONG AWAY
           </Link>
           <div className="relative flex w-[350px]">
-            <img src={timerImg} alt="timer" className="absolute -top-4 sm:-top-6 left-20 sm:left-28 xl:right-4 w-6/12 sm:w-3/5" />
+            <img
+              src={timerImg}
+              alt="timer"
+              className="absolute -top-4 left-20 w-6/12 sm:-top-6 sm:left-28 sm:w-3/5 xl:right-4"
+            />
             <Timer deadline="2025-08-15T23:59:59" />
           </div>
         </div>
         <TypingAnimation />
         <p className="mt-3 inline-block max-w-[300px] font-TestSohneMono text-xs leading-relaxed text-white sm:max-w-[500px] sm:text-lg lg:text-xl">
           <span className="text-secondery-color">Download </span>
-          now and dive into a world you won’t
-          want to leave!
+          now and dive into a world you won’t want to leave!
         </p>
         <Link
           to="/"
-          className="mt-4 flex h-[40px] w-[150px] items-center justify-center border-[1px] bg-transparent font-TestSohneMono text-xs text-white transition-all hover:bg-transparent sm:h-[50px] sm:w-[250px] sm:text-lg lg:text-xl hover:bg-white hover:text-black hover:border-black"
+          className="mt-4 flex h-[40px] w-[150px] items-center justify-center border-[1px] bg-transparent font-TestSohneMono text-xs text-white transition-all hover:border-black hover:bg-transparent hover:bg-white hover:text-black sm:h-[50px] sm:w-[250px] sm:text-lg lg:text-xl"
         >
           Purchase to order
         </Link>
@@ -79,7 +85,7 @@ export default function Games() {
               <img
                 src={img}
                 alt={`LongAway game slide ${index + 1}`}
-                className="h-64 w-full object-cover aspect-auto"
+                className="aspect-auto h-64 w-full object-cover"
                 loading="lazy"
               />
             </SwiperSlide>
@@ -92,13 +98,13 @@ export default function Games() {
               key={index}
               alt={`LongAway game thumbnail ${index + 1}`}
               onClick={() => swiperRef.current?.slideToLoop(index)}
-              className="h-16 w-24 cursor-pointer aspect-auto"
+              className="aspect-auto h-16 w-24 cursor-pointer"
               loading="lazy"
             />
           ))}
         </div>
       </div>
-      <div className="hidden lg:block relative -mt-16 w-[300px] sm:w-[500px]">
+      <div className="relative -mt-16 hidden w-[300px] sm:w-[500px] lg:block">
         <Swiper
           modules={[Navigation, Pagination, Autoplay]}
           spaceBetween={30}

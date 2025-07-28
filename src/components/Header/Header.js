@@ -6,8 +6,8 @@ import SteamImg from '../../assets/Images/steam.png';
 import InstagramImg from '../../assets/Images/instagram.png';
 import DiscordImg from '../../assets/Images/discord.png';
 import BarbWarn from '../../assets/Images/barb-warn.webp';
-import { gsap } from "gsap";
-import { SplitText } from "gsap/SplitText";
+import { gsap } from 'gsap';
+import { SplitText } from 'gsap/SplitText';
 
 gsap.registerPlugin(SplitText);
 
@@ -15,12 +15,11 @@ export default function Header() {
   const audioRef = useRef(null);
   const [isSoundPlay, setIsSoundPlay] = useState(false);
   const [isOpenNav, setIsOpenNav] = useState(true);
-  
+
   const navHandler = () => {
     setIsOpenNav((prev) => !prev);
+  };
 
-  }
-  
   const playSoundHandler = () => {
     if (!audioRef.current) return;
     if (isSoundPlay) {
@@ -29,7 +28,7 @@ export default function Header() {
       audioRef.current.play();
     }
     setIsSoundPlay((prev) => !prev);
-  };  
+  };
 
   return (
     <>
@@ -83,7 +82,10 @@ export default function Header() {
               </div>
             </button>
             <div className="hidden items-center justify-center gap-4 sm:flex">
-              <Link to='#' className='group relative ml-2 text-white font-IMBPlex text-base before:absolute before:-left-1 before:-translate-x-2 before:text-white before:content-["["] after:absolute after:-right-1 after:translate-x-2 after:text-white after:content-["]"] hover:transition-all hover:before:-translate-x-2.5 hover:after:translate-x-2.5'>
+              <Link
+                to="#"
+                className='group relative ml-2 font-IMBPlex text-base text-white before:absolute before:-left-1 before:-translate-x-2 before:text-white before:content-["["] after:absolute after:-right-1 after:translate-x-2 after:text-white after:content-["]"] hover:transition-all hover:before:-translate-x-2.5 hover:after:translate-x-2.5'
+              >
                 <span className="text-secondery-color transition-colors group-hover:animate-wiggle">
                   E
                 </span>
@@ -94,7 +96,7 @@ export default function Header() {
               <h1 className="text-base">FN</h1>
             </div>
             <Link
-              to='/'
+              to="/"
               onClick={() => navHandler()}
               className="flex items-center justify-center font-TestSohneMono sm:hidden"
             >

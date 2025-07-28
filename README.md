@@ -44,22 +44,25 @@
 - **Design Tool**: Figma (Arman Ebtekari)
 
 ## 🚀 **Installation**
+
 To run this website locally:
-   ```bash
-    # Clone this repository
-    $ git clone https://github.com/KianEbtekari0/pixee-website.git
-    
-    # Go into the repository
-    $ cd pixee-website
-    
-    # Install dependencies
-    $ npm install
-    
-    # Run the app
-    $ npm start
-   ```
+
+```bash
+ # Clone this repository
+ $ git clone https://github.com/KianEbtekari0/pixee-website.git
+
+ # Go into the repository
+ $ cd pixee-website
+
+ # Install dependencies
+ $ npm install
+
+ # Run the app
+ $ npm start
+```
 
 ## 📬 **Contact**
+
 For questions or suggestions, feel free to reach out:
 
 Email: kianebtekari0@gmail.com
