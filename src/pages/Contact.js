@@ -14,7 +14,7 @@ export default function Contact() {
   return (
     <div
       id="contact"
-      className="container relative z-40 mx-auto flex w-full flex-col justify-center sm:pb-16 lg:flex-row lg:gap-10 lg:pb-24"
+      className="container relative z-40 mx-auto flex w-full flex-col justify-center pb-14 sm:pb-16 lg:flex-row lg:gap-10 lg:pb-24"
     >
       <div className="flex flex-col">
         <div>
@@ -164,10 +164,10 @@ export default function Contact() {
           </SwiperSlide>
         </Swiper>
         <div className="flex gap-4">
-          <button className="bg-white" onClick={() => swiperRef.current.slidePrev()}>
-            <img src={arrow} className="rotate-180" alt="Previous slide button" loading="lazy" />
+          <button onClick={() => swiperRef.current.slidePrev()}>
+            <img src={arrow} className='rotate-180' alt="Previous slide button" loading="lazy" />
           </button>
-          <button className="bg-white" onClick={() => swiperRef.current.slideNext()}>
+          <button onClick={() => swiperRef.current.slideNext()}>
             <img src={arrow} className="slideshow button" alt="Next slide button" loading="lazy" />
           </button>
         </div>

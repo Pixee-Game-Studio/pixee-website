@@ -64,12 +64,12 @@ export default function LongAway() {
           </div>
         </div>
       </div>
-      <div className="container relative mx-auto mt-20 flex w-full flex-col items-center justify-between text-center xl:flex-row xl:gap-24 xl:text-left">
-        <div className="z-0">
+      <div className="container h-[350px] sm:h-[600px] md:h-[700px] lg::h-[650px] xl:h-auto relative mx-auto sm:mt-14 xl:mt-20 flex w-full flex-col items-center justify-between text-center xl:flex-row xl:gap-24 xl:text-left">
+        <div className="xl:z-0 z-10 xl:block flex items-center justify-center flex-col mt-24 sm:mt-52">
           <h1 className="font-BebasNeueRegular text-xl leading-relaxed text-white sm:text-5xl">
             PIXEE ORGINAL SOUND TRACK
           </h1>
-          <p className="mt-4 font-IMBPlex text-sm text-text-color sm:text-xl">
+          <p className="mt-4 font-IMBPlex text-xs text-text-color sm:text-xl">
             Music Composed And Produced By Kamyab
           </p>
           <div className="mt-5 flex flex-wrap items-center justify-center gap-5">
@@ -103,8 +103,8 @@ export default function LongAway() {
             </div>
           </div>
         </div>
-        <div className="z-0">
-          <img src={PianoImage} alt="Piano related to LongAway game soundtrack" loading="lazy" />
+        <div className="z-0 absolute xl:relative flex items-center justify-center">
+          <img src={PianoImage} className='w-4/5 md:w-full' alt="Piano related to LongAway game soundtrack" loading="lazy" />
         </div>
       </div>
     </div>

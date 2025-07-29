@@ -9,10 +9,8 @@ import { ScrambleTextPlugin } from 'gsap/ScrambleTextPlugin';
 gsap.registerPlugin(ScrambleTextPlugin);
 
 export default function Studio() {
-  const part1 =
-    'We are a small but passionate team of game developers brought together by a deep love for ';
-  const part2 =
-    'Our goal is not just to make games but to craft experiences that redefine the horror genre. ';
+  const part1 = 'We are a small but passionate team of game developers brought together by a deep love for ';
+  const part2 ='Our goal is not just to make games but to craft experiences that redefine the horror genre. ';
   const part3 = 'creativity, and surprise. We aim to go beyond clichés, the boundaries of fear, ';
   const part4 = 'creating unique, breathtaking, and unforgettable works that immerse players in a ';
   const part5 = "horror games unlike anything they've experienced before. whole new style of";
@@ -107,16 +105,16 @@ export default function Studio() {
               ABOUT PIXEE STUDIO
             </h2>
           </div>
-          <div
+          <p
             id="scramble-wrapper"
-            className="mt-2 font-TestSohneMono text-xs leading-relaxed text-white sm:max-w-[1300px] sm:text-lg lg:text-xl"
+            className="mt-2 font-TestSohneMono mx-auto text-xs text-white sm:max-w-[1300px] sm:text-lg lg:text-xl"
           >
-            <p id="scramble-text-1"></p>
-            <p id="scramble-text-2"></p>
-            <p id="scramble-text-3"></p>
-            <p id="scramble-text-4"></p>
-            <p id="scramble-text-5"></p>
-          </div>
+            <p id="scramble-text-1" className='leading-relaxed'></p>
+            <p id="scramble-text-2" className='leading-relaxed'></p>
+            <p id="scramble-text-3" className='leading-relaxed'></p>
+            <p id="scramble-text-4" className='leading-relaxed'></p>
+            <p id="scramble-text-5" className='leading-relaxed'></p>
+          </p>
         </div>
       </div>
       <hr className="w-full border-[#717171]" />

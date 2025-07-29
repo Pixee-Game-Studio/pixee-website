@@ -14,7 +14,7 @@ export default function Footer() {
               pixee Game is an independent game studio driven by creativity and passion, crafting
               unique and engaging experiences for players around the world.
             </p>
-            <Link to="#" className="mt-2 font-TestSohneMono text-secondery-color">
+            <Link to="#" className="mt-2 font-TestSohneMono text-secondery-color hover:text-secondery-color/50 transition-colors">
               get it on system
             </Link>
           </div>
@@ -34,24 +34,24 @@ export default function Footer() {
         <hr className="w-full border-[#717171]" />
         <div className="flex flex-wrap items-center justify-between gap-3 py-5 lg:px-14">
           <p className="font-IMBPlex text-xs text-white sm:text-sm lg:text-base">
-            ©2024 Pixee Game
+            ©2025 Pixee Game
           </p>
           <div className="flex items-center justify-center gap-5 sm:gap-10">
             <Link
               to="#"
-              className="font-IMBPlex text-xs text-primary-color sm:text-sm lg:text-base"
+              className="font-IMBPlex text-xs text-primary-color sm:text-sm lg:text-base hover:text-secondery-color transition-colors"
             >
               Terms of Service
             </Link>
             <Link
               to="#"
-              className="font-IMBPlex text-xs text-primary-color sm:text-sm lg:text-base"
+              className="font-IMBPlex text-xs text-primary-color sm:text-sm lg:text-base hover:text-secondery-color transition-colors"
             >
               Privacy
             </Link>
             <Link
               to="#"
-              className="font-IMBPlex text-xs text-primary-color sm:text-sm lg:text-base"
+              className="font-IMBPlex text-xs text-primary-color sm:text-sm lg:text-base hover:text-secondery-color transition-colors"
             >
               Cookies
             </Link>
