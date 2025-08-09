@@ -61,6 +61,7 @@ export default function Header() {
               CONTACT
             </a>
           </ul>
+          {/* Music button */}
           <div className="flex items-center space-x-5">
             <button
               className="flex items-center justify-center gap-2 text-lg"
@@ -95,6 +96,7 @@ export default function Header() {
               </Link>
               <h1 className="text-base">FN</h1>
             </div>
+            {/* Mobile Menu */}
             <Link
               to="/"
               onClick={() => navHandler()}

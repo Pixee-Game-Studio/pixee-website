@@ -165,7 +165,7 @@ export default function Contact() {
         </Swiper>
         <div className="flex gap-4">
           <button onClick={() => swiperRef.current.slidePrev()}>
-            <img src={arrow} className='rotate-180' alt="Previous slide button" loading="lazy" />
+            <img src={arrow} className="rotate-180" alt="Previous slide button" loading="lazy" />
           </button>
           <button onClick={() => swiperRef.current.slideNext()}>
             <img src={arrow} className="slideshow button" alt="Next slide button" loading="lazy" />

@@ -14,7 +14,10 @@ export default function Footer() {
               pixee Game is an independent game studio driven by creativity and passion, crafting
               unique and engaging experiences for players around the world.
             </p>
-            <Link to="#" className="mt-2 font-TestSohneMono text-secondery-color hover:text-secondery-color/50 transition-colors">
+            <Link
+              to="#"
+              className="mt-2 font-TestSohneMono text-secondery-color transition-colors hover:text-secondery-color/50"
+            >
               get it on system
             </Link>
           </div>
@@ -32,6 +35,7 @@ export default function Footer() {
           </div>
         </div>
         <hr className="w-full border-[#717171]" />
+        {/* Footers Bottom */}
         <div className="flex flex-wrap items-center justify-between gap-3 py-5 lg:px-14">
           <p className="font-IMBPlex text-xs text-white sm:text-sm lg:text-base">
             ©2025 Pixee Game
@@ -39,19 +43,19 @@ export default function Footer() {
           <div className="flex items-center justify-center gap-5 sm:gap-10">
             <Link
               to="#"
-              className="font-IMBPlex text-xs text-primary-color sm:text-sm lg:text-base hover:text-secondery-color transition-colors"
+              className="font-IMBPlex text-xs text-primary-color transition-colors hover:text-secondery-color sm:text-sm lg:text-base"
             >
               Terms of Service
             </Link>
             <Link
               to="#"
-              className="font-IMBPlex text-xs text-primary-color sm:text-sm lg:text-base hover:text-secondery-color transition-colors"
+              className="font-IMBPlex text-xs text-primary-color transition-colors hover:text-secondery-color sm:text-sm lg:text-base"
             >
               Privacy
             </Link>
             <Link
               to="#"
-              className="font-IMBPlex text-xs text-primary-color sm:text-sm lg:text-base hover:text-secondery-color transition-colors"
+              className="font-IMBPlex text-xs text-primary-color transition-colors hover:text-secondery-color sm:text-sm lg:text-base"
             >
               Cookies
             </Link>

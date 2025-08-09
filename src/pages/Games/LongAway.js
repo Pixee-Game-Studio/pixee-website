@@ -4,13 +4,14 @@ import PianoImage from '../../assets/Images/piano.webp';
 import Spotify from '../../assets/Images/spotify.png';
 import SoundCloud from '../../assets/Images/soundcloud.png';
 import YouTube from '../../assets/Images/youtube.png';
-import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import 'swiper/css';
 
 export default function LongAway() {
   return (
     <div>
+      {/* Story board */}
       <div className="relative z-40 w-full bg-story-page-bg">
         <div className="container mx-auto mt-14 flex w-full items-center justify-between gap-10 py-14 sm:h-[800px] lg:mt-32">
           <div>
@@ -64,8 +65,9 @@ export default function LongAway() {
           </div>
         </div>
       </div>
-      <div className="container h-[350px] sm:h-[600px] md:h-[700px] lg::h-[650px] xl:h-auto relative mx-auto sm:mt-14 xl:mt-20 flex w-full flex-col items-center justify-between text-center xl:flex-row xl:gap-24 xl:text-left">
-        <div className="xl:z-0 z-10 xl:block flex items-center justify-center flex-col mt-24 sm:mt-52">
+      {/* Sounds Track */}
+      <div className="lg::h-[650px] container relative mx-auto flex h-[350px] w-full flex-col items-center justify-between text-center sm:mt-14 sm:h-[600px] md:h-[700px] xl:mt-20 xl:h-auto xl:flex-row xl:gap-24 xl:text-left">
+        <div className="z-10 mt-24 flex flex-col items-center justify-center sm:mt-52 xl:z-0 xl:block">
           <h1 className="font-BebasNeueRegular text-xl leading-relaxed text-white sm:text-5xl">
             PIXEE ORGINAL SOUND TRACK
           </h1>
@@ -103,8 +105,13 @@ export default function LongAway() {
             </div>
           </div>
         </div>
-        <div className="z-0 absolute xl:relative flex items-center justify-center">
-          <img src={PianoImage} className='w-4/5 md:w-full' alt="Piano related to LongAway game soundtrack" loading="lazy" />
+        <div className="absolute z-0 flex items-center justify-center xl:relative">
+          <img
+            src={PianoImage}
+            className="w-4/5 md:w-full"
+            alt="Piano related to LongAway game soundtrack"
+            loading="lazy"
+          />
         </div>
       </div>
     </div>

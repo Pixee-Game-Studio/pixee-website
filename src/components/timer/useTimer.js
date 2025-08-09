@@ -43,6 +43,7 @@ const CountdownTimer = ({ deadline }) => {
     return () => clearInterval(timer);
   }, [deadline]);
 
+  // End Time
   if (!timeLeft) {
     return <h2 className="text-xl text-red-600">⏳ زمان تموم شد یا تاریخ اشتباهه!</h2>;
   }

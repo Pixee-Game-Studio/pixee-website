@@ -16,7 +16,7 @@ export default function Main() {
       <img
         src={BarbWarn}
         alt="Bar warn"
-        className="w-full pb-10 z-30 relative"
+        className="relative z-30 w-full pb-10"
         aria-hidden="true"
         role="presentation"
       />
