@@ -44,7 +44,7 @@ export default function Games() {
               alt="timer"
               className="absolute -top-4 left-20 w-6/12 sm:-top-6 sm:left-28 sm:w-3/5 xl:right-4"
             />
-            <Timer deadline="2025-08-15T23:59:59" />
+            <Timer deadline="2025-09-15T23:59:59" />
           </div>
         </div>
         <TypingAnimation />
