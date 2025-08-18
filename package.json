@@ -7,6 +7,8 @@
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.3.0",
     "@testing-library/user-event": "^13.5.0",
+    "cheerio": "^1.1.2",
+    "css-select": "^6.0.0",
     "form-data": "^4.0.4",
     "gsap": "^3.13.0",
     "minimatch": "^10.0.3",
