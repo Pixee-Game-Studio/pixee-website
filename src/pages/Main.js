@@ -13,13 +13,7 @@ export default function Main() {
       <img src={BarbWarn} className="w-full py-10" alt="Bar warn" />
       <Games />
       <LongAway />
-      <img
-        src={BarbWarn}
-        alt="Bar warn"
-        className="relative z-30 w-full pb-10"
-        aria-hidden="true"
-        role="presentation"
-      />
+      <img src={BarbWarn} alt="Bar warn" className="relative z-30 w-full pb-10" aria-hidden="true" role="presentation" />
       <Contact />
     </main>
   );
